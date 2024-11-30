@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DefaultColor"
+    tools:context=".DashBoardPertama">
+
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="310dp"
+        android:layout_height="505dp"
+        android:layout_marginTop="20dp"
+        android:elevation="11sp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageDashBoard"
+            android:layout_width="196dp"
+            android:layout_height="328dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:elevation="11sp"
+            android:src="@drawable/logo_utama" />
+
+        <LinearLayout
+            android:id="@+id/ButtonLogin"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner2"
+            android:elevation="15dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="LOGIN" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ButtonRegister"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_corner2"
+            android:elevation="15dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="REGISTER" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
