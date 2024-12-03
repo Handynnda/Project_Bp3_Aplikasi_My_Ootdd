@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DefaultColor"
+    tools:context=".Form_Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Pesanan"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Informasi Pembeli -->
+        <TextView
+            android:id="@+id/textNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama: John Doe"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat: Jl. Kebon Jeruk No. 10"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Informasi Produk -->
+        <TextView
+            android:id="@+id/textProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Produk: Kaos Polos Hitam"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah: 2"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Metode Pembayaran -->
+        <TextView
+            android:id="@+id/textMetode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metode Pembayaran: Transfer Bank"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Total Pembayaran -->
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran: Rp 300.000"
+            android:textSize="16sp"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tanggal Pesanan -->
+        <TextView
+            android:id="@+id/textTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pesanan: 3 Desember 2024"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

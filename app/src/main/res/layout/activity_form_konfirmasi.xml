@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form_Konfirmasi"
+    android:background="@color/DefaultColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Pembayaran"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Informasi Pembeli -->
+        <TextView
+            android:id="@+id/textNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama: John Doe"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat: Jl. Kebon Jeruk No. 10"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Total Pembayaran -->
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran: Rp 1.500.000"
+            android:textSize="16sp"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Metode Pembayaran -->
+        <TextView
+            android:id="@+id/textMetode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metode Pembayaran: Transfer Bank"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Informasi Nomor Rekening/E-wallet -->
+        <TextView
+            android:id="@+id/textRekening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Rekening: 123-456-7890"
+            android:textSize="16sp"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Upload Bukti -->
+        <Button
+            android:id="@+id/buttonUploadBukti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Bukti Pembayaran"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textBuktiUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bukti Pembayaran Belum Diupload"
+            android:textSize="14sp"
+            android:textColor="@color/redColor"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tombol Konfirmasi -->
+        <Button
+            android:id="@+id/buttonKonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Pembayaran"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
