@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(MainActivity.this, DashBoardPertama.class);
             startActivity(intent);
-            finish(); // Menutup MainActivity agar tidak kembali dengan tombol back
-        }, 500); // Delay 500ms
+            finish();
+        }, 3000);
     }
 }

@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/Layout1"
         android:layout_width="310dp"
-        android:layout_height="505dp"
+        android:layout_height="655dp"
         android:layout_marginTop="20dp"
         android:elevation="11sp"
         android:orientation="vertical"
@@ -31,7 +31,7 @@
 
         <LinearLayout
             android:id="@+id/ButtonLogin"
-            android:layout_width="150dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_corner2"
@@ -69,6 +69,27 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:text="REGISTER" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ButtonTanya"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_corner2"
+            android:elevation="15dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTanya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="Tanya Admin" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
