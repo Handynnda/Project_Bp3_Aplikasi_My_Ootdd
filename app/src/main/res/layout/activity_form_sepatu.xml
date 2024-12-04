@@ -88,7 +88,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Adidas Samba white" />
 
                 <TextView
                     android:id="@+id/hargas"
@@ -121,7 +121,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Sepatu Dokmart Hight" />
 
                 <TextView
                     android:id="@+id/hargas2"
@@ -154,7 +154,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="converse AllStar" />
 
                 <TextView
                     android:id="@+id/hargas3"
@@ -195,7 +195,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="New Balance 310 white" />
 
                 <TextView
                     android:id="@+id/hargas4"
@@ -228,7 +228,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Adidas Samba black" />
 
                 <TextView
                     android:id="@+id/hargas5"
@@ -261,7 +261,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Nike Air Jordan Low" />
 
                 <TextView
                     android:id="@+id/hargas6"
@@ -302,7 +302,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Nike Air Jordan Hight" />
 
                 <TextView
                     android:id="@+id/hargas7"
@@ -335,7 +335,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="docmart woman low" />
 
                 <TextView
                     android:id="@+id/hargas8"
@@ -368,7 +368,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Ventela public low Black" />
 
                 <TextView
                     android:id="@+id/hargas9"
@@ -400,7 +400,7 @@
                     android:id="@+id/sepatu10"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/sepatu10" />
+                    app:srcCompat="@drawable/sepatu" />
 
                 <TextView
                     android:id="@+id/namas10"
@@ -433,7 +433,7 @@
                     android:id="@+id/sepatu11"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/sepatu11" />
+                    app:srcCompat="@drawable/sepatu" />
 
                 <TextView
                     android:id="@+id/namas11"
@@ -466,7 +466,7 @@
                     android:id="@+id/sepatu12"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/sepatu12" />
+                    app:srcCompat="@drawable/sepatu" />
 
                 <TextView
                     android:id="@+id/namas12"
