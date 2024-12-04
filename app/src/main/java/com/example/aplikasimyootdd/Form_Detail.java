@@ -1,43 +1,57 @@
 package com.example.aplikasimyootdd;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Detail extends AppCompatActivity {
 
-    private TextView textNama, textAlamat, textProduk, textJumlah, textMetode, textTotal, textTanggal;
+    private TextView textNamaPembeli, textAlamatPembeli, textProduk, textJumlahBeli, textMetodePembayaran, textTotalPembayaran;
+    private Button buttonKembaliHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_detail);
 
-        // Inisialisasi view
-        textNama = findViewById(R.id.textNama);
-        textAlamat = findViewById(R.id.textAlamat);
+        // Inisialisasi View
+        textNamaPembeli = findViewById(R.id.textNamaPembeli);
+        textAlamatPembeli = findViewById(R.id.textAlamatPembeli);
         textProduk = findViewById(R.id.textProduk);
-        textJumlah = findViewById(R.id.textJumlah);
-        textMetode = findViewById(R.id.textMetode);
-        textTotal = findViewById(R.id.textTotal);
-        textTanggal = findViewById(R.id.textTanggal);
+        textJumlahBeli = findViewById(R.id.textJumlahBeli);
+        textMetodePembayaran = findViewById(R.id.textMetodePembayaran);
+        textTotalPembayaran = findViewById(R.id.textTotalPembayaran);
+        buttonKembaliHome = findViewById(R.id.buttonKembaliHome);
 
-        // Ambil data dari intent atau gunakan data dummy untuk testing
-        String nama = "John Doe";
-        String alamat = "Jl. Kebon Jeruk No. 10";
-        String produk = "Kaos Polos Hitam";
-        int jumlah = 2;
-        String metode = "Transfer Bank";
-        String total = "Rp 300.000";
-        String tanggal = "3 Desember 2024";
+        // Terima data dari Intent
+        Intent intent = getIntent();
+        String namaPembeli = intent.getStringExtra("namaPembeli");
+        String alamatPembeli = intent.getStringExtra("alamatPembeli");
+        String namaProduk = intent.getStringExtra("namaProduk");
+        int jumlahBeli = intent.getIntExtra("jumlahBeli", 1);
+        double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);
+        String metodePembayaran = intent.getStringExtra("metodePembayaran");
 
-        // Set data ke TextView
-        textNama.setText("Nama: " + nama);
-        textAlamat.setText("Alamat: " + alamat);
-        textProduk.setText("Produk: " + produk);
-        textJumlah.setText("Jumlah: " + jumlah);
-        textMetode.setText("Metode Pembayaran: " + metode);
-        textTotal.setText("Total Pembayaran: " + total);
-        textTanggal.setText("Tanggal Pesanan: " + tanggal);
+        // Hitung total pembayaran
+        double totalPembayaran = hargaProduk * jumlahBeli;
+
+        // Set data pada TextView
+        textNamaPembeli.setText(namaPembeli);
+        textAlamatPembeli.setText(alamatPembeli);
+        textProduk.setText(namaProduk);
+        textJumlahBeli.setText("Jumlah Beli: " + jumlahBeli);
+        textMetodePembayaran.setText(metodePembayaran);
+        textTotalPembayaran.setText("Rp " + totalPembayaran);
+
+        // Listener untuk Tombol Kembali ke Home
+        buttonKembaliHome.setOnClickListener(v -> {
+            // Kembali ke Home
+            Intent homeIntent = new Intent(this, DashboardUtama.class); // Ganti MainActivity dengan activity utama Anda
+            startActivity(homeIntent);
+            finish();
+        });
     }
 }

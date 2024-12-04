@@ -1,57 +1,56 @@
 package com.example.aplikasimyootdd;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Pembayaran extends AppCompatActivity {
 
-    private RadioGroup radioGroup;
-    private RadioButton radioTransfer, radioEwallet;
-    private EditText inputCatatan;
-    private Button buttonBayar;
+    private TextView textNamaBarang;
+    private EditText inputNamaPembeli, inputAlamat, inputJumlah;
+    private RadioGroup radioGroupMetode;
+    private Button buttonSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_pembayaran);
 
-        // Inisialisasi elemen UI
-        radioGroup = findViewById(R.id.radioGroup);
-        radioTransfer = findViewById(R.id.radioTransfer);
-        radioEwallet = findViewById(R.id.radioEwallet);
-        inputCatatan = findViewById(R.id.inputCatatan);
-        buttonBayar = findViewById(R.id.buttonBayar);
+        // Inisialisasi View
+        textNamaBarang = findViewById(R.id.textNamaBarang);
+        inputNamaPembeli = findViewById(R.id.inputNamaPembeli);
+        inputAlamat = findViewById(R.id.inputAlamat);
+        inputJumlah = findViewById(R.id.inputJumlah);
+        radioGroupMetode = findViewById(R.id.radioGroupMetode);
+        buttonSubmit = findViewById(R.id.buttonSubmit);
 
-        // Atur tombol bayar untuk memproses pembayaran
-        buttonBayar.setOnClickListener(view -> processPayment());
-    }
+        // Terima data dari Intent
+        Intent intent = getIntent();
+        String namaBarang = intent.getStringExtra("namaBarang");
+        textNamaBarang.setText(namaBarang);
 
-    private void processPayment() {
-        // Periksa apakah metode pembayaran telah dipilih
-        int selectedId = radioGroup.getCheckedRadioButtonId();
-        if (selectedId == -1) {
-            Toast.makeText(this, "Pilih metode pembayaran terlebih dahulu", Toast.LENGTH_SHORT).show();
-        } else {
-            // Dapatkan metode pembayaran yang dipilih
-            String paymentMethod = selectedId == R.id.radioTransfer ? "Transfer Bank" : "E-Wallet";
+        // Listener untuk Tombol Submit
+        buttonSubmit.setOnClickListener(v -> {
+            // Validasi Input Pengguna
+            String namaPembeli = inputNamaPembeli.getText().toString();
+            String alamat = inputAlamat.getText().toString();
+            String jumlah = inputJumlah.getText().toString();
+            int metodeId = radioGroupMetode.getCheckedRadioButtonId();
 
-            // Ambil catatan dari input pengguna
-            String catatan = inputCatatan.getText().toString().trim();
-
-            // Tampilkan pesan konfirmasi
-            String message = "Pembayaran menggunakan: " + paymentMethod;
-            if (!catatan.isEmpty()) {
-                message += "\nCatatan: " + catatan;
+            // Periksa apakah semua input sudah terisi
+            if (namaPembeli.isEmpty() || alamat.isEmpty() || jumlah.isEmpty() || metodeId == -1) {
+                Toast.makeText(this, "Mohon lengkapi semua data!", Toast.LENGTH_SHORT).show();
+                return;
             }
-            Toast.makeText(this, message, Toast.LENGTH_LONG).show();
 
-            // Tambahkan logika tambahan seperti API atau navigasi ke layar lain di sini
-        }
+            // Menampilkan Pesan Pembayaran
+            Toast.makeText(this, "Pembayaran berhasil diajukan!", Toast.LENGTH_SHORT).show();
+        });
     }
 }

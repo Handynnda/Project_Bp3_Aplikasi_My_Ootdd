@@ -1,92 +1,59 @@
 package com.example.aplikasimyootdd;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Konfirmasi extends AppCompatActivity {
 
-    private TextView textNama, textAlamat, textTotal, textMetode, textBuktiUpload, textRekening;
-    private Button buttonUploadBukti, buttonKonfirmasi;
-    private static final int PICK_IMAGE_REQUEST = 1;
-    private Uri selectedBuktiUri;
+    private TextView textNamaPembeli, textAlamatPembeli, textTotalPembayaran, textMetodePembayaran;
+    private Button buttonUploadBukti, buttonKonfirmasiPembayaran;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_konfirmasi);
 
-        // Inisialisasi view
-        textNama = findViewById(R.id.textNama);
-        textAlamat = findViewById(R.id.textAlamat);
-        textTotal = findViewById(R.id.textTotal);
-        textMetode = findViewById(R.id.textMetode);
-        textBuktiUpload = findViewById(R.id.textBuktiUpload);
-        textRekening = findViewById(R.id.textRekening);  // TextView untuk menampilkan nomor rekening
+        // Inisialisasi View
+        textNamaPembeli = findViewById(R.id.textNamaPembeli);
+        textAlamatPembeli = findViewById(R.id.textAlamatPembeli);
+        textTotalPembayaran = findViewById(R.id.textTotalPembayaran);
+        textMetodePembayaran = findViewById(R.id.textMetodePembayaran);
         buttonUploadBukti = findViewById(R.id.buttonUploadBukti);
-        buttonKonfirmasi = findViewById(R.id.buttonKonfirmasi);
+        buttonKonfirmasiPembayaran = findViewById(R.id.buttonKonfirmasiPembayaran);
 
-        // Ambil data dari intent sebelumnya
-        String nama = "John Doe";  // Contoh data, ganti sesuai implementasi
-        String alamat = "Jl. Kebon Jeruk No. 10";  // Ambil dari form pembayaran
-        String total = "Rp 1.500.000";  // Ambil dari form pembayaran
-        String metode = "Transfer Bank";  // Ambil dari form pembayaran
+        // Terima data dari Intent
+        Intent intent = getIntent();
+        String namaPembeli = intent.getStringExtra("namaPembeli");
+        String alamatPembeli = intent.getStringExtra("alamatPembeli");
+        String namaBarang = intent.getStringExtra("namaBarang");
+        int jumlahBarang = intent.getIntExtra("jumlahBarang", 1);
+        double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
+        String metodePembayaran = intent.getStringExtra("metodePembayaran");
 
-        // Set data ke TextView
-        textNama.setText("Nama: " + nama);
-        textAlamat.setText("Alamat: " + alamat);
-        textTotal.setText("Total Pembayaran: " + total);
-        textMetode.setText("Metode Pembayaran: " + metode);
+        // Hitung total pembayaran
+        double totalPembayaran = hargaBarang * jumlahBarang;
 
-        // Menampilkan nomor rekening atau e-wallet berdasarkan metode pembayaran
-        if (metode.equals("Transfer Bank")) {
-            textRekening.setText("Nomor Rekening: 123-456-7890");  // Nomor rekening untuk transfer bank
-            textRekening.setVisibility(TextView.VISIBLE);  // Menampilkan nomor rekening
-        } else if (metode.equals("E-wallet")) {
-            textRekening.setText("E-wallet: 081234567890");  // Nomor E-wallet
-            textRekening.setVisibility(TextView.VISIBLE);  // Menampilkan e-wallet
-        } else {
-            textRekening.setVisibility(TextView.GONE);  // Menyembunyikan jika tidak ada metode pembayaran yang dipilih
-        }
+        // Set data pada TextView
+        textNamaPembeli.setText(namaPembeli);
+        textAlamatPembeli.setText(alamatPembeli);
+        textTotalPembayaran.setText("Rp " + totalPembayaran);
+        textMetodePembayaran.setText(metodePembayaran);
 
-        // Handle upload bukti pembayaran
-        buttonUploadBukti.setOnClickListener(v -> openFileChooser());
-
-        // Handle konfirmasi pembayaran
-        buttonKonfirmasi.setOnClickListener(v -> {
-            if (selectedBuktiUri != null) {
-                // Kirim data konfirmasi pembayaran ke server atau simpan
-                Toast.makeText(this, "Pembayaran Dikonfirmasi", Toast.LENGTH_SHORT).show();
-            } else {
-                textBuktiUpload.setText("Bukti Pembayaran Belum Diupload");
-                textBuktiUpload.setTextColor(Color.RED);
-                textBuktiUpload.setVisibility(TextView.VISIBLE);  // Menampilkan pesan bukti belum di-upload
-            }
+        // Listener untuk Tombol Upload Bukti Pembayaran
+        buttonUploadBukti.setOnClickListener(v -> {
+            // Implementasikan logika upload bukti pembayaran
+            Toast.makeText(this, "Pilih bukti pembayaran untuk diupload", Toast.LENGTH_SHORT).show();
         });
-    }
 
-    // Fungsi untuk membuka file chooser dan memilih bukti pembayaran
-    private void openFileChooser() {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        intent.setType("image/*");
-        startActivityForResult(intent, PICK_IMAGE_REQUEST);
-    }
-
-    // Mendapatkan hasil pemilihan file gambar (bukti pembayaran)
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            selectedBuktiUri = data.getData();
-            textBuktiUpload.setText("Bukti Pembayaran: " + selectedBuktiUri.getLastPathSegment());
-            textBuktiUpload.setTextColor(Color.GREEN);
-            textBuktiUpload.setVisibility(TextView.VISIBLE);  // Menampilkan pesan bukti telah di-upload
-        }
+        // Listener untuk Tombol Konfirmasi Pembayaran
+        buttonKonfirmasiPembayaran.setOnClickListener(v -> {
+            // Simulasikan konfirmasi pembayaran
+            Toast.makeText(this, "Pembayaran berhasil dikonfirmasi!", Toast.LENGTH_SHORT).show();
+        });
     }
 }

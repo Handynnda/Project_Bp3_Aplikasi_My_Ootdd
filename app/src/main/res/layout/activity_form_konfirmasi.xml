@@ -1,115 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Form_Konfirmasi"
-    android:background="@color/DefaultColor">
+    android:background="#F5F5F5"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_margin="16dp"
-        android:background="@drawable/rounded_corner2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:gravity="center">
 
-        <!-- Header -->
-        <TextView
-            android:id="@+id/textHeader"
+        <!-- CardView untuk Nama Pembeli -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Konfirmasi Pembayaran"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:cardElevation="4dp"
+            android:cardCornerRadius="8dp">
 
-        <!-- Informasi Pembeli -->
-        <TextView
-            android:id="@+id/textNama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nama: John Doe"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/white">
 
-        <TextView
-            android:id="@+id/textAlamat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Alamat: Jl. Kebon Jeruk No. 10"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp" />
+                <TextView
+                    android:id="@+id/textNamaPembeli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pembeli"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textAlamatPembeli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Pembeli"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <!-- Total Pembayaran -->
-        <TextView
-            android:id="@+id/textTotal"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total Pembayaran: Rp 1.500.000"
-            android:textSize="16sp"
-            android:textColor="@color/primaryColor"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:cardElevation="4dp"
+            android:cardCornerRadius="8dp">
 
-        <!-- Metode Pembayaran -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/textTotalPembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Pembayaran"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textMetodePembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metode Pembayaran"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Upload Bukti Pembayaran -->
         <TextView
-            android:id="@+id/textMetode"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Metode Pembayaran: Transfer Bank"
+            android:text="Upload Bukti Pembayaran:"
+            android:textColor="#333333"
             android:textSize="16sp"
-            android:textColor="@color/black"
             android:layout_marginBottom="8dp" />
 
-        <!-- Informasi Nomor Rekening/E-wallet -->
-        <TextView
-            android:id="@+id/textRekening"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nomor Rekening: 123-456-7890"
-            android:textSize="16sp"
-            android:textColor="@color/primaryColor"
-            android:layout_marginBottom="16dp"
-            android:visibility="gone" />
-
-        <!-- Upload Bukti -->
         <Button
             android:id="@+id/buttonUploadBukti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upload Bukti Pembayaran"
-            android:backgroundTint="@color/primaryColor"
+            android:text="Pilih Bukti Pembayaran"
+            android:background="@color/purple_500"
             android:textColor="@android:color/white"
-            android:layout_marginBottom="8dp" />
-
-        <TextView
-            android:id="@+id/textBuktiUpload"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bukti Pembayaran Belum Diupload"
-            android:textSize="14sp"
-            android:textColor="@color/redColor"
-            android:visibility="gone"
+            android:textSize="16sp"
+            android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
-        <!-- Tombol Konfirmasi -->
+        <!-- Tombol Konfirmasi Pembayaran -->
         <Button
-            android:id="@+id/buttonKonfirmasi"
+            android:id="@+id/buttonKonfirmasiPembayaran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Konfirmasi Pembayaran"
-            android:backgroundTint="@color/primaryColor"
+            android:background="@color/purple_500"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
