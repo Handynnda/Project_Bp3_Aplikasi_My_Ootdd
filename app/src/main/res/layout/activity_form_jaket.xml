@@ -88,7 +88,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="bomber classik grey " />
 
                 <TextView
                     android:id="@+id/hargaj"
@@ -98,7 +98,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.180.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -121,7 +121,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Tweed ma-r blouson" />
 
                 <TextView
                     android:id="@+id/hargaj2"
@@ -131,7 +131,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.150.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -154,7 +154,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="bomber denim black" />
 
                 <TextView
                     android:id="@+id/hargaj3"
@@ -164,7 +164,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.200.000" />
             </LinearLayout>
         </LinearLayout>
 
@@ -185,7 +185,7 @@
                 <ImageView
                     android:id="@+id/jaket4"
                     android:layout_width="wrap_content"
-                    android:layout_height="73dp"
+                    android:layout_height="72dp"
                     app:srcCompat="@drawable/jaket4" />
 
                 <TextView
@@ -195,7 +195,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="jaket kulit\n pria" />
 
                 <TextView
                     android:id="@+id/hargaj4"
@@ -205,7 +205,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.250.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -228,7 +228,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Crooped wol-jaket" />
 
                 <TextView
                     android:id="@+id/hargaj5"
@@ -238,7 +238,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.200.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -261,7 +261,7 @@
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="denim jaket hope" />
 
                 <TextView
                     android:id="@+id/hargaj6"
@@ -271,7 +271,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.140.000" />
             </LinearLayout>
         </LinearLayout>
 
@@ -299,20 +299,20 @@
                     android:id="@+id/namaj7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10dp"
+                    android:text="goster knit sweater"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/hargaj7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textSize="10sp"
+                    android:text="Rp.300.000"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -332,20 +332,20 @@
                     android:id="@+id/namaj8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10dp"
+                    android:text="jaket gorpcore shelter desert"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/hargaj8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textSize="10sp"
+                    android:text="Rp.250.000"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -365,20 +365,20 @@
                     android:id="@+id/namaj9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10dp"
+                    android:text="jaket in brown loewe"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/hargaj9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textSize="10sp"
+                    android:text="Rp.100.000"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -400,7 +400,7 @@
                     android:id="@+id/jaket10"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/jaket10" />
+                    app:srcCompat="@drawable/jaket" />
 
                 <TextView
                     android:id="@+id/namaj10"
@@ -433,7 +433,7 @@
                     android:id="@+id/jaket11"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/jaket11" />
+                    app:srcCompat="@drawable/jaket" />
 
                 <TextView
                     android:id="@+id/namaj11"
@@ -466,7 +466,7 @@
                     android:id="@+id/jaket12"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/jaket12" />
+                    app:srcCompat="@drawable/jaket" />
 
                 <TextView
                     android:id="@+id/namaj12"
