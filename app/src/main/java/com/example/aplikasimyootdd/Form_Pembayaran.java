@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,7 +23,6 @@ public class Form_Pembayaran extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_pembayaran);
 
-        // Inisialisasi View
         textNamaBarang = findViewById(R.id.textNamaBarang);
         inputNamaPembeli = findViewById(R.id.inputNamaPembeli);
         inputAlamat = findViewById(R.id.inputAlamat);
@@ -30,27 +30,35 @@ public class Form_Pembayaran extends AppCompatActivity {
         radioGroupMetode = findViewById(R.id.radioGroupMetode);
         buttonSubmit = findViewById(R.id.buttonSubmit);
 
-        // Terima data dari Intent
         Intent intent = getIntent();
         String namaBarang = intent.getStringExtra("namaBarang");
+        double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
         textNamaBarang.setText(namaBarang);
 
-        // Listener untuk Tombol Submit
         buttonSubmit.setOnClickListener(v -> {
-            // Validasi Input Pengguna
             String namaPembeli = inputNamaPembeli.getText().toString();
             String alamat = inputAlamat.getText().toString();
-            String jumlah = inputJumlah.getText().toString();
+            String jumlahStr = inputJumlah.getText().toString();
             int metodeId = radioGroupMetode.getCheckedRadioButtonId();
 
-            // Periksa apakah semua input sudah terisi
-            if (namaPembeli.isEmpty() || alamat.isEmpty() || jumlah.isEmpty() || metodeId == -1) {
+            if (namaPembeli.isEmpty() || alamat.isEmpty() || jumlahStr.isEmpty() || metodeId == -1) {
                 Toast.makeText(this, "Mohon lengkapi semua data!", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            // Menampilkan Pesan Pembayaran
-            Toast.makeText(this, "Pembayaran berhasil diajukan!", Toast.LENGTH_SHORT).show();
+            int jumlahBarang = Integer.parseInt(jumlahStr);
+
+            RadioButton selectedMetode = findViewById(metodeId);
+            String metodePembayaran = selectedMetode.getText().toString();
+
+            Intent konfirmasiIntent = new Intent(this, Form_Konfirmasi.class);
+            konfirmasiIntent.putExtra("namaPembeli", namaPembeli);
+            konfirmasiIntent.putExtra("alamatPembeli", alamat);
+            konfirmasiIntent.putExtra("jumlahBarang", jumlahBarang);
+            konfirmasiIntent.putExtra("hargaBarang", hargaBarang);
+            konfirmasiIntent.putExtra("metodePembayaran", metodePembayaran);
+
+            startActivity(konfirmasiIntent);
         });
     }
 }

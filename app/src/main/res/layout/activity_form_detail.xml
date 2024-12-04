@@ -13,7 +13,6 @@
         android:gravity="center"
         android:paddingBottom="16dp">
 
-        <!-- CardView untuk Nama Pembeli dan Alamat -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +48,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- CardView untuk Produk dan Jumlah -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,7 +83,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- CardView untuk Metode Pembayaran dan Total -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -122,7 +119,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Tombol Kembali ke Home -->
         <Button
             android:id="@+id/buttonKembaliHome"
             android:layout_width="match_parent"

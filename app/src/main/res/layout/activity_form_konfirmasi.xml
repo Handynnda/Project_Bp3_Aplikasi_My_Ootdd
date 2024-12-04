@@ -12,7 +12,6 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <!-- CardView untuk Nama Pembeli -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +46,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Total Pembayaran -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,10 +77,19 @@
                     android:textColor="#333333"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp" />
+
+                <!-- Tambahkan untuk info nomor rekening/e-wallet -->
+                <TextView
+                    android:id="@+id/textInfoPembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informasi Pembayaran"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Upload Bukti Pembayaran -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,7 +109,6 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
-        <!-- Tombol Konfirmasi Pembayaran -->
         <Button
             android:id="@+id/buttonKonfirmasiPembayaran"
             android:layout_width="match_parent"

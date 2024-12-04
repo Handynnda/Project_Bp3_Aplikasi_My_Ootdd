@@ -17,7 +17,6 @@ public class Form_Detail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_detail);
 
-        // Inisialisasi View
         textNamaPembeli = findViewById(R.id.textNamaPembeli);
         textAlamatPembeli = findViewById(R.id.textAlamatPembeli);
         textProduk = findViewById(R.id.textProduk);
@@ -26,7 +25,6 @@ public class Form_Detail extends AppCompatActivity {
         textTotalPembayaran = findViewById(R.id.textTotalPembayaran);
         buttonKembaliHome = findViewById(R.id.buttonKembaliHome);
 
-        // Terima data dari Intent
         Intent intent = getIntent();
         String namaPembeli = intent.getStringExtra("namaPembeli");
         String alamatPembeli = intent.getStringExtra("alamatPembeli");
@@ -35,10 +33,8 @@ public class Form_Detail extends AppCompatActivity {
         double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);
         String metodePembayaran = intent.getStringExtra("metodePembayaran");
 
-        // Hitung total pembayaran
         double totalPembayaran = hargaProduk * jumlahBeli;
 
-        // Set data pada TextView
         textNamaPembeli.setText(namaPembeli);
         textAlamatPembeli.setText(alamatPembeli);
         textProduk.setText(namaProduk);
@@ -46,9 +42,8 @@ public class Form_Detail extends AppCompatActivity {
         textMetodePembayaran.setText(metodePembayaran);
         textTotalPembayaran.setText("Rp " + totalPembayaran);
 
-        // Listener untuk Tombol Kembali ke Home
         buttonKembaliHome.setOnClickListener(v -> {
-            // Kembali ke Home
+
             Intent homeIntent = new Intent(this, DashboardUtama.class); // Ganti MainActivity dengan activity utama Anda
             startActivity(homeIntent);
             finish();
