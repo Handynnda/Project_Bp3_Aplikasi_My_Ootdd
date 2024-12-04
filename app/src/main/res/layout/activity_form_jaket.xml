@@ -55,6 +55,7 @@
                     android:background="@android:color/transparent"
                     android:hint="Cari Jaket"
                     android:inputType="text"
+                    android:textSize="18sp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black" />
             </LinearLayout>
@@ -64,31 +65,106 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="73dp"
+                    app:srcCompat="@drawable/jaket" />
+
+                <TextView
+                    android:id="@+id/namaj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="71dp"
+                    app:srcCompat="@drawable/jaket2" />
+
+                <TextView
+                    android:id="@+id/namaj2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    app:srcCompat="@drawable/jaket3" />
+
+                <TextView
+                    android:id="@+id/namaj3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
         </LinearLayout>
 
@@ -100,27 +176,102 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="73dp"
+                    app:srcCompat="@drawable/jaket4" />
+
+                <TextView
+                    android:id="@+id/namaj4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    app:srcCompat="@drawable/jaket5" />
+
+                <TextView
+                    android:id="@+id/namaj5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    app:srcCompat="@drawable/jaket6" />
+
+                <TextView
+                    android:id="@+id/namaj6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
         </LinearLayout>
 
@@ -132,27 +283,102 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    app:srcCompat="@drawable/jaket7" />
+
+                <TextView
+                    android:id="@+id/namaj7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    app:srcCompat="@drawable/jaket8" />
+
+                <TextView
+                    android:id="@+id/namaj8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    app:srcCompat="@drawable/jaket9" />
+
+                <TextView
+                    android:id="@+id/namaj9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
         </LinearLayout>
 
@@ -164,29 +390,105 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    app:srcCompat="@drawable/jaket10" />
+
+                <TextView
+                    android:id="@+id/namaj10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    app:srcCompat="@drawable/jaket11" />
+
+                <TextView
+                    android:id="@+id/namaj11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="68dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jaket12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    app:srcCompat="@drawable/jaket12" />
+
+                <TextView
+                    android:id="@+id/namaj12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Celana Pria Pendek" />
+
+                <TextView
+                    android:id="@+id/hargaj12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Rp.70.000" />
             </LinearLayout>
         </LinearLayout>
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
