@@ -79,7 +79,8 @@
                     android:id="@+id/celana"
                     android:layout_width="wrap_content"
                     android:layout_height="89dp"
-                    app:srcCompat="@drawable/celana" />
+                    app:srcCompat="@drawable/celana"
+                    android:onClick="onCelanaclick"/>
 
                 <TextView
                     android:id="@+id/namac"
@@ -112,7 +113,8 @@
                     android:id="@+id/celana2"
                     android:layout_width="wrap_content"
                     android:layout_height="89dp"
-                    app:srcCompat="@drawable/celana2" />
+                    app:srcCompat="@drawable/celana2"
+                    android:onClick="onCelana2click"/>
 
                 <TextView
                     android:id="@+id/namac2"
@@ -145,7 +147,8 @@
                     android:id="@+id/celana3"
                     android:layout_width="wrap_content"
                     android:layout_height="89dp"
-                    app:srcCompat="@drawable/celana3" />
+                    app:srcCompat="@drawable/celana3"
+                    android:onClick="onCelana3click"/>
 
                 <TextView
                     android:id="@+id/namac3"
@@ -185,7 +188,8 @@
                     android:id="@+id/celana4"
                     android:layout_width="wrap_content"
                     android:layout_height="91dp"
-                    app:srcCompat="@drawable/celana4" />
+                    app:srcCompat="@drawable/celana4"
+                    android:onClick="onCelana4click"/>
 
                 <TextView
                     android:id="@+id/namac4"
@@ -218,7 +222,8 @@
                     android:id="@+id/celana5"
                     android:layout_width="wrap_content"
                     android:layout_height="89dp"
-                    app:srcCompat="@drawable/celana5" />
+                    app:srcCompat="@drawable/celana5"
+                    android:onClick="onCelana5click"/>
 
                 <TextView
                     android:id="@+id/namac5"
@@ -251,7 +256,8 @@
                     android:id="@+id/celana6"
                     android:layout_width="wrap_content"
                     android:layout_height="88dp"
-                    app:srcCompat="@drawable/celana6" />
+                    app:srcCompat="@drawable/celana6"
+                    android:onClick="onCelana6click"/>
 
                 <TextView
                     android:id="@+id/namac6"
@@ -292,7 +298,8 @@
                     android:id="@+id/celana7"
                     android:layout_width="wrap_content"
                     android:layout_height="91dp"
-                    app:srcCompat="@drawable/celana7" />
+                    app:srcCompat="@drawable/celana7"
+                    android:onClick="onCelana7click"/>
 
                 <TextView
                     android:id="@+id/namac7"
@@ -325,7 +332,8 @@
                     android:id="@+id/celana8"
                     android:layout_width="wrap_content"
                     android:layout_height="88dp"
-                    app:srcCompat="@drawable/celana8" />
+                    app:srcCompat="@drawable/celana8"
+                    android:onClick="onCelana8click"/>
 
                 <TextView
                     android:id="@+id/namac8"
@@ -358,7 +366,8 @@
                     android:id="@+id/celana9"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/celana9" />
+                    app:srcCompat="@drawable/celana9"
+                    android:onClick="onCelana9click"/>
 
                 <TextView
                     android:id="@+id/namac9"
@@ -399,7 +408,8 @@
                     android:id="@+id/celana10"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/celana" />
+                    app:srcCompat="@drawable/celana"
+                    android:onClick="onCelana10click"/>
 
                 <TextView
                     android:id="@+id/namac10"
@@ -432,7 +442,8 @@
                     android:id="@+id/celana11"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/celana" />
+                    app:srcCompat="@drawable/celana"
+                    android:onClick="onCelana11click"/>
 
                 <TextView
                     android:id="@+id/namac11"
@@ -465,7 +476,8 @@
                     android:id="@+id/celana12"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/celana" />
+                    app:srcCompat="@drawable/celana"
+                    android:onClick="onCelana12click"/>
 
                 <TextView
                     android:id="@+id/namac12"
