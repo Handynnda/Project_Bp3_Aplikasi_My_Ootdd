@@ -8,8 +8,8 @@
     tools:context=".form_baju">
 
     <LinearLayout
-        android:layout_width="310dp"
-        android:layout_height="655dp"
+        android:layout_width="380dp"
+        android:layout_height="800dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corner2"
         android:elevation="12dp"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.187">
 
         <LinearLayout
-            android:layout_width="280dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
@@ -35,7 +35,7 @@
                 android:src="@drawable/iconback" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="275dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
                 android:background="@drawable/search_bar_background"
@@ -62,15 +62,15 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="280dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -102,8 +102,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -135,8 +135,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -169,15 +169,15 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="280dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -209,8 +209,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -242,8 +242,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -276,15 +276,15 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="280dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -316,8 +316,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -349,8 +349,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -383,15 +383,15 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="280dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="15dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -423,8 +423,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -456,8 +456,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="68dp"
-                android:layout_height="120dp"
+                android:layout_width="83dp"
+                android:layout_height="155dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">

@@ -10,8 +10,8 @@
     tools:context=".DashboardUtama">
 
     <LinearLayout
-        android:layout_width="310dp"
-        android:layout_height="655dp"
+        android:layout_width="350dp"
+        android:layout_height="800dp"
         android:background="@drawable/rounded_corner"
         android:elevation="12dp"
         android:orientation="vertical"
@@ -49,10 +49,10 @@
 
             <LinearLayout
                 android:id="@+id/bottombaju"
-                android:layout_width="150dp"
+                android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="100dp"
                 android:background="@drawable/rounded_corner2"
                 android:elevation="15dp"
                 android:orientation="vertical">
@@ -70,7 +70,7 @@
 
             <LinearLayout
                 android:id="@+id/bottomjaket"
-                android:layout_width="150dp"
+                android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
@@ -91,7 +91,7 @@
 
             <LinearLayout
                 android:id="@+id/bottomsepatu"
-                android:layout_width="150dp"
+                android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
@@ -112,7 +112,7 @@
 
             <LinearLayout
                 android:id="@+id/bottomcelana"
-                android:layout_width="150dp"
+                android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
@@ -135,7 +135,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="120dp"
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
@@ -150,16 +150,16 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="60dp"
                     app:srcCompat="@drawable/gmail" />
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="60dp"
                     app:srcCompat="@drawable/whatsapp" />
             </LinearLayout>
 
