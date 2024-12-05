@@ -35,6 +35,15 @@ public class Form_Pembayaran extends AppCompatActivity {
         double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
         textNamaBarang.setText(namaBarang);
 
+        // Mendapatkan data yang dikirimkan dari Form_Celana
+        Intent intent = getIntent();
+        String namaBarang = intent.getStringExtra("namaBarang");
+        double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
+
+        // Menampilkan nama barang
+        textNamaBarang.setText(namaBarang);
+
+        // Aksi pada tombol submit
         buttonSubmit.setOnClickListener(v -> {
             String namaPembeli = inputNamaPembeli.getText().toString();
             String alamat = inputAlamat.getText().toString();
@@ -51,6 +60,14 @@ public class Form_Pembayaran extends AppCompatActivity {
             RadioButton selectedMetode = findViewById(metodeId);
             String metodePembayaran = selectedMetode.getText().toString();
 
+            // Parsing jumlah barang
+            int jumlahBarang = Integer.parseInt(jumlahStr);
+
+            // Mendapatkan metode pembayaran yang dipilih
+            RadioButton selectedMetode = findViewById(metodeId);
+            String metodePembayaran = selectedMetode.getText().toString();
+
+            // Mengirim data ke halaman konfirmasi pembayaran
             Intent konfirmasiIntent = new Intent(this, Form_Konfirmasi.class);
             konfirmasiIntent.putExtra("namaPembeli", namaPembeli);
             konfirmasiIntent.putExtra("alamatPembeli", alamat);
