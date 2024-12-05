@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <!-- Warna Dasar -->
     <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
 
     <!-- Warna Utama -->
     <color name="primaryColor">#6200EE</color>
@@ -17,16 +16,4 @@
     <!-- Warna Error -->
     <color name="redColor">#FF0000</color>
 
-    <color name="purple_500">#6200EE</color>
-    <color name="white">#FFFFFF</color>
-    <color name="gray_light">#F5F5F5</color>
-    <color name="gray_dark">#333333</color>
-
 </resources>
-=======
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="purple_500">#9C27B0</color>
-    <color name="DefaultColor">#ADCAFF</color>
-</resources>
->>>>>>> 22e9e2d578cba15eff2b3dd53b77e8e6e56becf4

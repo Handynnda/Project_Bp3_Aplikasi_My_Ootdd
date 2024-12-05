@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5"
@@ -12,12 +13,13 @@
         android:orientation="vertical"
         android:gravity="center">
 
+        <!-- CardView untuk informasi pembeli -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:cardElevation="4dp"
-            android:cardCornerRadius="8dp">
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,12 +48,13 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- CardView untuk informasi pembayaran -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:cardElevation="4dp"
-            android:cardCornerRadius="8dp">
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -90,6 +93,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- Label Upload Bukti Pembayaran -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,23 +102,25 @@
             android:textSize="16sp"
             android:layout_marginBottom="8dp" />
 
+        <!-- Tombol Pilih Bukti Pembayaran -->
         <Button
             android:id="@+id/buttonUploadBukti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pilih Bukti Pembayaran"
-            android:background="@color/purple_500"
+            android:background="@color/DefaultColor"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
+        <!-- Tombol Konfirmasi Pembayaran -->
         <Button
             android:id="@+id/buttonKonfirmasiPembayaran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Konfirmasi Pembayaran"
-            android:background="@color/purple_500"
+            android:background="@color/DefaultColor"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:padding="12dp"

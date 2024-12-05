@@ -91,5 +91,15 @@
                 android:textColor="@color/black"
                 android:text="Tanya Admin" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="design by Handy, Iseu dan Arga"
+            android:textAlignment="center" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

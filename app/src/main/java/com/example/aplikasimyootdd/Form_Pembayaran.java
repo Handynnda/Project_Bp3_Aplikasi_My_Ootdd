@@ -23,6 +23,7 @@ public class Form_Pembayaran extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_pembayaran);
 
+        // Inisialisasi view dari layout
         textNamaBarang = findViewById(R.id.textNamaBarang);
         inputNamaPembeli = findViewById(R.id.inputNamaPembeli);
         inputAlamat = findViewById(R.id.inputAlamat);
@@ -30,17 +31,10 @@ public class Form_Pembayaran extends AppCompatActivity {
         radioGroupMetode = findViewById(R.id.radioGroupMetode);
         buttonSubmit = findViewById(R.id.buttonSubmit);
 
+        // Mendapatkan data barang dari Intent
         Intent intent = getIntent();
         String namaBarang = intent.getStringExtra("namaBarang");
         double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
-        textNamaBarang.setText(namaBarang);
-
-        // Mendapatkan data yang dikirimkan dari Form_Celana
-        Intent intent = getIntent();
-        String namaBarang = intent.getStringExtra("namaBarang");
-        double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
-
-        // Menampilkan nama barang
         textNamaBarang.setText(namaBarang);
 
         // Aksi pada tombol submit
@@ -50,15 +44,11 @@ public class Form_Pembayaran extends AppCompatActivity {
             String jumlahStr = inputJumlah.getText().toString();
             int metodeId = radioGroupMetode.getCheckedRadioButtonId();
 
+            // Validasi input
             if (namaPembeli.isEmpty() || alamat.isEmpty() || jumlahStr.isEmpty() || metodeId == -1) {
                 Toast.makeText(this, "Mohon lengkapi semua data!", Toast.LENGTH_SHORT).show();
                 return;
             }
-
-            int jumlahBarang = Integer.parseInt(jumlahStr);
-
-            RadioButton selectedMetode = findViewById(metodeId);
-            String metodePembayaran = selectedMetode.getText().toString();
 
             // Parsing jumlah barang
             int jumlahBarang = Integer.parseInt(jumlahStr);

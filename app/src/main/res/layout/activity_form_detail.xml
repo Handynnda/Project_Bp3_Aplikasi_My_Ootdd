@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/DefaultColor"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
         android:paddingBottom="16dp">
 
+        <!-- CardView untuk Detail Pembeli -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:cardElevation="8dp"
-            android:cardCornerRadius="8dp"
-            android:contentPadding="16dp"
-            android:backgroundTint="#FFFFFF">
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/white">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center_vertical">
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/textNamaPembeli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nama Pembeli"
-                    android:textColor="#333333"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -42,33 +42,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Alamat Pembeli"
-                    android:textColor="#333333"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- CardView untuk Detail Produk -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:cardElevation="8dp"
-            android:cardCornerRadius="8dp"
-            android:contentPadding="16dp"
-            android:backgroundTint="#FFFFFF">
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/white">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center_vertical">
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/textProduk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nama Produk"
-                    android:textColor="#333333"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -77,33 +77,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jumlah Beli: X"
-                    android:textColor="#333333"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- CardView untuk Metode Pembayaran -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:cardElevation="8dp"
-            android:cardCornerRadius="8dp"
-            android:contentPadding="16dp"
-            android:backgroundTint="#FFFFFF">
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/white">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center_vertical">
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/textMetodePembayaran"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Metode Pembayaran"
-                    android:textColor="#333333"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -112,19 +112,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Total Pembayaran: Rp 0"
-                    android:textColor="#333333"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- Tombol Kembali ke Home -->
         <Button
             android:id="@+id/buttonKembaliHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Kembali ke Home"
-            android:background="#6200EE"
+            android:background="@color/primaryColor"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:padding="12dp"

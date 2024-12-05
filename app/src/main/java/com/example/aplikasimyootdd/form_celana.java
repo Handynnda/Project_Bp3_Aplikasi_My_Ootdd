@@ -66,58 +66,58 @@ public class form_celana extends AppCompatActivity {
 
 
         celana1.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
             intent.putExtra("namaProduk", namac1.getText().toString());
             intent.putExtra("hargaProduk", hargac1.getText().toString());
             startActivity(intent);
         });
 
         celana2.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
             intent.putExtra("namaProduk", namac2.getText().toString());
             intent.putExtra("hargaProduk", hargac2.getText().toString());
             startActivity(intent);
         });
 
         celana3.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
             intent.putExtra("namaProduk", namac3.getText().toString());
             intent.putExtra("hargaProduk", hargac3.getText().toString());
             startActivity(intent);
         });
 
         celana4.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
             intent.putExtra("namaProduk", namac4.getText().toString());
             intent.putExtra("hargaProduk", hargac4.getText().toString());
             startActivity(intent);
         });
 
         celana5.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
             intent.putExtra("namaProduk", namac5.getText().toString());
             intent.putExtra("hargaProduk", hargac5.getText().toString());
             startActivity(intent);
         });
 
-        celana3.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
-            intent.putExtra("namaProduk", namac3.getText().toString());
-            intent.putExtra("hargaProduk", hargac3.getText().toString());
+        celana6.setOnClickListener(view -> {
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
+            intent.putExtra("namaProduk", namac6.getText().toString());
+            intent.putExtra("hargaProduk", hargac6.getText().toString());
             startActivity(intent);
         });
 
-        celana3.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
-            intent.putExtra("namaProduk", namac3.getText().toString());
-            intent.putExtra("hargaProduk", hargac3.getText().toString());
+        celana7.setOnClickListener(view -> {
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
+            intent.putExtra("namaProduk", namac7.getText().toString());
+            intent.putExtra("hargaProduk", hargac7.getText().toString());
             startActivity(intent);
         });
 
-        celana3.setOnClickListener(view -> {
-            Intent intent = new Intent(form_celana.this, DashboardUtama.class);
-            intent.putExtra("namaProduk", namac3.getText().toString());
-            intent.putExtra("hargaProduk", hargac3.getText().toString());
+        celana8.setOnClickListener(view -> {
+            Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
+            intent.putExtra("namaProduk", namac8.getText().toString());
+            intent.putExtra("hargaProduk", hargac8.getText().toString());
             startActivity(intent);
         });
     }
