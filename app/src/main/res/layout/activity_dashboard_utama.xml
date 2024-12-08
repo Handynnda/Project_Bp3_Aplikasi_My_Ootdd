@@ -74,8 +74,8 @@
 
                     <ImageView
                         android:id="@+id/imagedm"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="31dp"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/diamond" />
 
@@ -95,8 +95,8 @@
 
                     <ImageView
                         android:id="@+id/imagedelivery"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/delivery_car" />
 
@@ -122,8 +122,8 @@
 
                     <ImageView
                         android:id="@+id/imagetime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="32dp"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/time_left" />
 
@@ -143,8 +143,8 @@
 
                     <ImageView
                         android:id="@+id/imageadmin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/support" />
 
@@ -185,10 +185,10 @@
                         android:id="@+id/textSepatu"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="70dp"
                         android:background="@drawable/rounded_corner"
                         android:elevation="15dp"
-                        android:layout_marginTop="70dp"
-                        android:layout_gravity="center"
                         android:text="Sepatu"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -200,8 +200,8 @@
                     android:id="@+id/bottomcelana"
                     android:layout_width="170dp"
                     android:layout_height="112dp"
-                    android:layout_marginStart="10dp"
                     android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
                     android:background="@drawable/bg_celana"
                     android:elevation="15dp"
                     android:orientation="vertical">
@@ -210,10 +210,10 @@
                         android:id="@+id/textCelana"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="70dp"
                         android:background="@drawable/rounded_corner"
                         android:elevation="15dp"
-                        android:layout_marginTop="70dp"
-                        android:layout_gravity="center"
                         android:text="Celana"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -241,10 +241,10 @@
                         android:id="@+id/textBaju"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_corner"
-                        android:elevation="15dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="74dp"
+                        android:background="@drawable/rounded_corner"
+                        android:elevation="15dp"
                         android:text="Baju"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -265,10 +265,10 @@
                         android:id="@+id/textJaket"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_corner"
-                        android:elevation="15dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="75dp"
+                        android:background="@drawable/rounded_corner"
+                        android:elevation="15dp"
                         android:text="Jaket"
                         android:textAlignment="center"
                         android:textColor="@color/black"

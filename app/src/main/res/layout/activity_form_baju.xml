@@ -79,7 +79,8 @@
                     android:id="@+id/baju"
                     android:layout_width="wrap_content"
                     android:layout_height="87dp"
-                    app:srcCompat="@drawable/baju" />
+                    app:srcCompat="@drawable/baju"
+                    android:onClick="onBajuclick"/>
 
                 <TextView
                     android:id="@+id/namab"
@@ -112,7 +113,8 @@
                     android:id="@+id/baju2"
                     android:layout_width="wrap_content"
                     android:layout_height="89dp"
-                    app:srcCompat="@drawable/baju2" />
+                    app:srcCompat="@drawable/baju2"
+                    android:onClick="onBaju2click" />
 
                 <TextView
                     android:id="@+id/namab2"
@@ -145,7 +147,8 @@
                     android:id="@+id/baju3"
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
-                    app:srcCompat="@drawable/baju3" />
+                    app:srcCompat="@drawable/baju3"
+                    android:onClick="onBaju3click" />
 
                 <TextView
                     android:id="@+id/namab3"
@@ -186,7 +189,8 @@
                     android:id="@+id/baju4"
                     android:layout_width="wrap_content"
                     android:layout_height="94dp"
-                    app:srcCompat="@drawable/baju4" />
+                    app:srcCompat="@drawable/baju4"
+                    android:onClick="onBaju4click" />
 
                 <TextView
                     android:id="@+id/namab4"
@@ -219,7 +223,8 @@
                     android:id="@+id/baju5"
                     android:layout_width="wrap_content"
                     android:layout_height="91dp"
-                    app:srcCompat="@drawable/baju5" />
+                    app:srcCompat="@drawable/baju5"
+                    android:onClick="onBaju5click" />
 
                 <TextView
                     android:id="@+id/namab5"
@@ -252,7 +257,8 @@
                     android:id="@+id/baju6"
                     android:layout_width="wrap_content"
                     android:layout_height="87dp"
-                    app:srcCompat="@drawable/baju6" />
+                    app:srcCompat="@drawable/baju6"
+                    android:onClick="onBaju6click" />
 
                 <TextView
                     android:id="@+id/namab6"
@@ -293,7 +299,8 @@
                     android:id="@+id/baju7"
                     android:layout_width="wrap_content"
                     android:layout_height="95dp"
-                    app:srcCompat="@drawable/baju7" />
+                    app:srcCompat="@drawable/baju7"
+                    android:onClick="onBaju7click" />
 
                 <TextView
                     android:id="@+id/namab7"
@@ -326,7 +333,8 @@
                     android:id="@+id/baju8"
                     android:layout_width="wrap_content"
                     android:layout_height="86dp"
-                    app:srcCompat="@drawable/baju8" />
+                    app:srcCompat="@drawable/baju8"
+                    android:onClick="onBaju8click" />
 
                 <TextView
                     android:id="@+id/namab8"
@@ -359,7 +367,8 @@
                     android:id="@+id/baju9"
                     android:layout_width="wrap_content"
                     android:layout_height="86dp"
-                    app:srcCompat="@drawable/baju9" />
+                    app:srcCompat="@drawable/baju9"
+                    android:onClick="onBaju9click" />
 
                 <TextView
                     android:id="@+id/namab9"
@@ -400,7 +409,8 @@
                     android:id="@+id/baju10"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/baju" />
+                    app:srcCompat="@drawable/baju"
+                    android:onClick="onBaju10click" />
 
                 <TextView
                     android:id="@+id/namab10"
@@ -433,7 +443,8 @@
                     android:id="@+id/baju11"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/baju" />
+                    app:srcCompat="@drawable/baju"
+                    android:onClick="onBaju11click" />
 
                 <TextView
                     android:id="@+id/namab11"
@@ -466,7 +477,8 @@
                     android:id="@+id/baju12"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/baju" />
+                    app:srcCompat="@drawable/baju"
+                    android:onClick="onBaju12click" />
 
                 <TextView
                     android:id="@+id/namab12"

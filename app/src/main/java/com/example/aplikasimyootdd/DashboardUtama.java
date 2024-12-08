@@ -49,30 +49,31 @@ public class DashboardUtama extends AppCompatActivity {
                 Intent intent = new Intent(DashboardUtama.this, form_celana.class);
                 startActivity(intent);
             }
-        });
 
-        ImageView whatsappIcon = findViewById(R.id.imageView3);
-        whatsappIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String phoneNumber = "62895413920668";
-                Uri uri = Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
 
-        ImageView gmailIcon = findViewById(R.id.imageView2);
-        gmailIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"Handynandaf@gmail.com"});
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Pertanyaan ke Admin");
-                intent.putExtra(Intent.EXTRA_TEXT, "Halo Admin, saya ingin bertanya...");
-                startActivity(Intent.createChooser(intent, "Kirim Email menggunakan:"));
-            }
         });
+//        ImageView whatsappIcon = findViewById(R.id.imageView3);
+//        whatsappIcon.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String phoneNumber = "62895413920668";
+//                Uri uri = Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber);
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        ImageView gmailIcon = findViewById(R.id.imageView2);
+//        gmailIcon.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Intent.ACTION_SEND);
+//                intent.setType("text/plain");
+//                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"Handynandaf@gmail.com"});
+//                intent.putExtra(Intent.EXTRA_SUBJECT, "Pertanyaan ke Admin");
+//                intent.putExtra(Intent.EXTRA_TEXT, "Halo Admin, saya ingin bertanya...");
+//                startActivity(Intent.createChooser(intent, "Kirim Email menggunakan:"));
+//            }
+//        });
     }
 }

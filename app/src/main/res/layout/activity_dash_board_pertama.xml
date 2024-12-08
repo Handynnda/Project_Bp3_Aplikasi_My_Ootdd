@@ -11,9 +11,8 @@
 
     <LinearLayout
         android:id="@+id/Layout1"
-        android:layout_width="350dp"
-        android:layout_height="800dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="419dp"
+        android:layout_height="890dp"
         android:background="@drawable/rounded_corner2"
         android:elevation="11sp"
         android:orientation="vertical"
@@ -23,7 +22,7 @@
 
         <ImageView
             android:id="@+id/imageDashBoard"
-            android:layout_width="196dp"
+            android:layout_width="296dp"
             android:layout_height="328dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
@@ -32,10 +31,10 @@
 
         <LinearLayout
             android:id="@+id/ButtonLogin"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="110dp"
             android:background="@drawable/rounded_corner"
             android:elevation="15dp"
             android:orientation="vertical">
@@ -77,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="180dp"
             android:text="design by Handy, Iseu dan Arga"
             android:textAlignment="center"
             android:textSize="15sp"
