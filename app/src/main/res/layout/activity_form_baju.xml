@@ -78,7 +78,7 @@
                 <ImageView
                     android:id="@+id/baju"
                     android:layout_width="wrap_content"
-                    android:layout_height="72dp"
+                    android:layout_height="87dp"
                     app:srcCompat="@drawable/baju" />
 
                 <TextView
@@ -111,7 +111,7 @@
                 <ImageView
                     android:id="@+id/baju2"
                     android:layout_width="wrap_content"
-                    android:layout_height="72dp"
+                    android:layout_height="89dp"
                     app:srcCompat="@drawable/baju2" />
 
                 <TextView
@@ -144,7 +144,7 @@
                 <ImageView
                     android:id="@+id/baju3"
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="93dp"
                     app:srcCompat="@drawable/baju3" />
 
                 <TextView
@@ -185,7 +185,7 @@
                 <ImageView
                     android:id="@+id/baju4"
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="94dp"
                     app:srcCompat="@drawable/baju4" />
 
                 <TextView
@@ -218,7 +218,7 @@
                 <ImageView
                     android:id="@+id/baju5"
                     android:layout_width="wrap_content"
-                    android:layout_height="74dp"
+                    android:layout_height="91dp"
                     app:srcCompat="@drawable/baju5" />
 
                 <TextView
@@ -251,7 +251,7 @@
                 <ImageView
                     android:id="@+id/baju6"
                     android:layout_width="wrap_content"
-                    android:layout_height="72dp"
+                    android:layout_height="87dp"
                     app:srcCompat="@drawable/baju6" />
 
                 <TextView
@@ -292,7 +292,7 @@
                 <ImageView
                     android:id="@+id/baju7"
                     android:layout_width="wrap_content"
-                    android:layout_height="79dp"
+                    android:layout_height="95dp"
                     app:srcCompat="@drawable/baju7" />
 
                 <TextView
@@ -325,7 +325,7 @@
                 <ImageView
                     android:id="@+id/baju8"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp"
+                    android:layout_height="86dp"
                     app:srcCompat="@drawable/baju8" />
 
                 <TextView
@@ -358,7 +358,7 @@
                 <ImageView
                     android:id="@+id/baju9"
                     android:layout_width="wrap_content"
-                    android:layout_height="71dp"
+                    android:layout_height="86dp"
                     app:srcCompat="@drawable/baju9" />
 
                 <TextView

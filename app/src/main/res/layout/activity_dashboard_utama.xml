@@ -23,23 +23,142 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textJudul"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="MYOOTD" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="350dp"
+            android:layout_height="258dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo_home" />
+
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:elevation="20dp"
+            android:textAlignment="center"
             android:text="My Outfit Of The Day"
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textPilihan"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:text="Pilihan Menu"
-            android:textSize="20sp" />
+            android:background="@color/white"
+            android:elevation="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagedm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/diamond" />
+
+                    <TextView
+                        android:id="@+id/textkualitas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kualitas Bahan\n Premium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagedelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/delivery_car" />
+
+                    <TextView
+                        android:id="@+id/textpengiriman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pengiriman tepat\n waktu" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/time_left" />
+
+                    <TextView
+                        android:id="@+id/textgaransi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Garansi Produk\n 1 Tahun" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageadmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/support" />
+
+                    <TextView
+                        android:id="@+id/textbetanya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mau Bertanya\n Ke Admin ?" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ButtonPilihan"
@@ -48,121 +167,117 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/bottombaju"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:background="@drawable/rounded_corner2"
-                android:elevation="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textBaju"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Baju"
-                    android:textAlignment="center"
-                    android:textSize="25dp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/bottomjaket"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_corner2"
-                android:elevation="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textJaket"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jaket"
-                    android:textAlignment="center"
-                    android:textSize="25dp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/bottomsepatu"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_corner2"
-                android:elevation="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textSepatu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sepatu"
-                    android:textAlignment="center"
-                    android:textSize="25dp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/bottomcelana"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_corner2"
-                android:elevation="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textCelana"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Celana"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
-                android:textAlignment="center"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:text="MAU BERTANYA KE ADMIN ?" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="115dp"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginStart="60dp"
-                    app:srcCompat="@drawable/gmail" />
+                <LinearLayout
+                    android:id="@+id/bottomsepatu"
+                    android:layout_width="170dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_sepatu"
+                    android:elevation="15dp"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginStart="60dp"
-                    app:srcCompat="@drawable/whatsapp" />
+                    <TextView
+                        android:id="@+id/textSepatu"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:elevation="15dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_gravity="center"
+                        android:text="Sepatu"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomcelana"
+                    android:layout_width="170dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_celana"
+                    android:elevation="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textCelana"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:elevation="15dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_gravity="center"
+                        android:text="Celana"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/bottombaju"
+                    android:layout_width="170dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_kaos"
+                    android:elevation="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textBaju"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:elevation="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="74dp"
+                        android:text="Baju"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomjaket"
+                    android:layout_width="170dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_jaket"
+                    android:elevation="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textJaket"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:elevation="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="75dp"
+                        android:text="Jaket"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

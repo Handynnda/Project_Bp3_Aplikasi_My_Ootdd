@@ -78,7 +78,7 @@
                 <ImageView
                     android:id="@+id/jaket"
                     android:layout_width="wrap_content"
-                    android:layout_height="73dp"
+                    android:layout_height="89dp"
                     app:srcCompat="@drawable/jaket" />
 
                 <TextView
@@ -111,7 +111,7 @@
                 <ImageView
                     android:id="@+id/jaket2"
                     android:layout_width="wrap_content"
-                    android:layout_height="71dp"
+                    android:layout_height="86dp"
                     app:srcCompat="@drawable/jaket2" />
 
                 <TextView
@@ -144,7 +144,7 @@
                 <ImageView
                     android:id="@+id/jaket3"
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="95dp"
                     app:srcCompat="@drawable/jaket3" />
 
                 <TextView
@@ -185,7 +185,7 @@
                 <ImageView
                     android:id="@+id/jaket4"
                     android:layout_width="wrap_content"
-                    android:layout_height="72dp"
+                    android:layout_height="88dp"
                     app:srcCompat="@drawable/jaket4" />
 
                 <TextView
@@ -218,7 +218,7 @@
                 <ImageView
                     android:id="@+id/jaket5"
                     android:layout_width="wrap_content"
-                    android:layout_height="78dp"
+                    android:layout_height="95dp"
                     app:srcCompat="@drawable/jaket5" />
 
                 <TextView
@@ -251,7 +251,7 @@
                 <ImageView
                     android:id="@+id/jaket6"
                     android:layout_width="wrap_content"
-                    android:layout_height="72dp"
+                    android:layout_height="88dp"
                     app:srcCompat="@drawable/jaket6" />
 
                 <TextView
@@ -292,7 +292,7 @@
                 <ImageView
                     android:id="@+id/jaket7"
                     android:layout_width="wrap_content"
-                    android:layout_height="72dp"
+                    android:layout_height="87dp"
                     app:srcCompat="@drawable/jaket7" />
 
                 <TextView
@@ -325,7 +325,7 @@
                 <ImageView
                     android:id="@+id/jaket8"
                     android:layout_width="wrap_content"
-                    android:layout_height="72dp"
+                    android:layout_height="88dp"
                     app:srcCompat="@drawable/jaket8" />
 
                 <TextView

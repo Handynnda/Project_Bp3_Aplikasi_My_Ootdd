@@ -78,7 +78,7 @@
                     <ImageView
                         android:id="@+id/sepatu"
                         android:layout_width="wrap_content"
-                        android:layout_height="72dp"
+                        android:layout_height="88dp"
                         app:srcCompat="@drawable/sepatu" />
 
                     <TextView
@@ -111,7 +111,7 @@
                     <ImageView
                         android:id="@+id/sepatu2"
                         android:layout_width="wrap_content"
-                        android:layout_height="70dp"
+                        android:layout_height="86dp"
                         app:srcCompat="@drawable/sepatu2" />
 
                     <TextView
@@ -144,7 +144,7 @@
                     <ImageView
                         android:id="@+id/sepatu3"
                         android:layout_width="wrap_content"
-                        android:layout_height="78dp"
+                        android:layout_height="96dp"
                         app:srcCompat="@drawable/sepatu3" />
 
                     <TextView
@@ -185,7 +185,7 @@
                     <ImageView
                         android:id="@+id/sepatu4"
                         android:layout_width="wrap_content"
-                        android:layout_height="73dp"
+                        android:layout_height="89dp"
                         app:srcCompat="@drawable/sepatu4" />
 
                     <TextView
@@ -218,7 +218,7 @@
                     <ImageView
                         android:id="@+id/sepatu5"
                         android:layout_width="wrap_content"
-                        android:layout_height="73dp"
+                        android:layout_height="89dp"
                         app:srcCompat="@drawable/sepatu5" />
 
                     <TextView
@@ -251,7 +251,7 @@
                     <ImageView
                         android:id="@+id/sepatu6"
                         android:layout_width="wrap_content"
-                        android:layout_height="78dp"
+                        android:layout_height="95dp"
                         app:srcCompat="@drawable/sepatu6" />
 
                     <TextView
@@ -292,7 +292,7 @@
                     <ImageView
                         android:id="@+id/sepatu7"
                         android:layout_width="wrap_content"
-                        android:layout_height="71dp"
+                        android:layout_height="88dp"
                         app:srcCompat="@drawable/sepatu7" />
 
                     <TextView
@@ -325,7 +325,7 @@
                     <ImageView
                         android:id="@+id/sepatu8"
                         android:layout_width="wrap_content"
-                        android:layout_height="73dp"
+                        android:layout_height="88dp"
                         app:srcCompat="@drawable/sepatu8" />
 
                     <TextView
@@ -358,7 +358,7 @@
                     <ImageView
                         android:id="@+id/sepatu9"
                         android:layout_width="wrap_content"
-                        android:layout_height="79dp"
+                        android:layout_height="96dp"
                         app:srcCompat="@drawable/sepatu9" />
 
                     <TextView
