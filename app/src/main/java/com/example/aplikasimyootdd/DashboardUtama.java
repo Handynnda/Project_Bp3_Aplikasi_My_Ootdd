@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DashboardUtama extends AppCompatActivity {
@@ -14,6 +16,16 @@ public class DashboardUtama extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_utama);
+
+        TextView textLogout = findViewById(R.id.textLogout);
+        textLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardUtama.this, FormLogin.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         LinearLayout buttonBaju = findViewById(R.id.bottombaju);
         buttonBaju.setOnClickListener(new View.OnClickListener() {

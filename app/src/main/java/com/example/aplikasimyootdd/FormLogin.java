@@ -3,6 +3,7 @@ package com.example.aplikasimyootdd;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -21,6 +22,13 @@ public class FormLogin extends AppCompatActivity {
         textUser = findViewById(R.id.TextUser);
         textPass = findViewById(R.id.TextPass);
         buttonLogin = findViewById(R.id.buttonLogin);
+
+        ImageView iconback = findViewById(R.id.imageBack);
+
+        iconback.setOnClickListener(view -> {
+            Intent intent = new Intent(FormLogin.this, DashBoardPertama.class);
+            startActivity(intent);
+        });
 
         buttonLogin.setOnClickListener(v -> {
             String username = textUser.getText().toString().trim();

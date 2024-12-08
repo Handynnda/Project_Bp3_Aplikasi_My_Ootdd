@@ -79,7 +79,8 @@
                     android:id="@+id/jaket"
                     android:layout_width="wrap_content"
                     android:layout_height="89dp"
-                    app:srcCompat="@drawable/jaket" />
+                    app:srcCompat="@drawable/jaket"
+                    android:onClick="onJaketclick" />
 
                 <TextView
                     android:id="@+id/namaj"
@@ -112,7 +113,8 @@
                     android:id="@+id/jaket2"
                     android:layout_width="wrap_content"
                     android:layout_height="86dp"
-                    app:srcCompat="@drawable/jaket2" />
+                    app:srcCompat="@drawable/jaket2"
+                    android:onClick="onJaket2click" />
 
                 <TextView
                     android:id="@+id/namaj2"
@@ -145,7 +147,8 @@
                     android:id="@+id/jaket3"
                     android:layout_width="wrap_content"
                     android:layout_height="95dp"
-                    app:srcCompat="@drawable/jaket3" />
+                    app:srcCompat="@drawable/jaket3"
+                    android:onClick="onJaket3click" />
 
                 <TextView
                     android:id="@+id/namaj3"
@@ -186,7 +189,8 @@
                     android:id="@+id/jaket4"
                     android:layout_width="wrap_content"
                     android:layout_height="88dp"
-                    app:srcCompat="@drawable/jaket4" />
+                    app:srcCompat="@drawable/jaket4"
+                    android:onClick="onJaket4click" />
 
                 <TextView
                     android:id="@+id/namaj4"
@@ -219,7 +223,8 @@
                     android:id="@+id/jaket5"
                     android:layout_width="wrap_content"
                     android:layout_height="95dp"
-                    app:srcCompat="@drawable/jaket5" />
+                    app:srcCompat="@drawable/jaket5"
+                    android:onClick="onJaket5click" />
 
                 <TextView
                     android:id="@+id/namaj5"
@@ -252,7 +257,8 @@
                     android:id="@+id/jaket6"
                     android:layout_width="wrap_content"
                     android:layout_height="88dp"
-                    app:srcCompat="@drawable/jaket6" />
+                    app:srcCompat="@drawable/jaket6"
+                    android:onClick="onJaket6click" />
 
                 <TextView
                     android:id="@+id/namaj6"
@@ -293,7 +299,8 @@
                     android:id="@+id/jaket7"
                     android:layout_width="wrap_content"
                     android:layout_height="87dp"
-                    app:srcCompat="@drawable/jaket7" />
+                    app:srcCompat="@drawable/jaket7"
+                    android:onClick="onJaket7click" />
 
                 <TextView
                     android:id="@+id/namaj7"
@@ -326,7 +333,8 @@
                     android:id="@+id/jaket8"
                     android:layout_width="wrap_content"
                     android:layout_height="88dp"
-                    app:srcCompat="@drawable/jaket8" />
+                    app:srcCompat="@drawable/jaket8"
+                    android:onClick="onJaket8click" />
 
                 <TextView
                     android:id="@+id/namaj8"
@@ -359,7 +367,8 @@
                     android:id="@+id/jaket9"
                     android:layout_width="wrap_content"
                     android:layout_height="77dp"
-                    app:srcCompat="@drawable/jaket9" />
+                    app:srcCompat="@drawable/jaket9"
+                    android:onClick="onJaket9click" />
 
                 <TextView
                     android:id="@+id/namaj9"
@@ -400,7 +409,8 @@
                     android:id="@+id/jaket10"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/jaket" />
+                    app:srcCompat="@drawable/jaket"
+                    android:onClick="onJaket10click" />
 
                 <TextView
                     android:id="@+id/namaj10"
@@ -433,7 +443,8 @@
                     android:id="@+id/jaket11"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/jaket" />
+                    app:srcCompat="@drawable/jaket"
+                    android:onClick="onJaket11click" />
 
                 <TextView
                     android:id="@+id/namaj11"
@@ -466,7 +477,8 @@
                     android:id="@+id/jaket12"
                     android:layout_width="wrap_content"
                     android:layout_height="90dp"
-                    app:srcCompat="@drawable/jaket" />
+                    app:srcCompat="@drawable/jaket"
+                    android:onClick="onJaket12click" />
 
                 <TextView
                     android:id="@+id/namaj12"

@@ -3,6 +3,7 @@ package com.example.aplikasimyootdd;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -22,6 +23,13 @@ public class FormRegister extends AppCompatActivity {
         textUsername = findViewById(R.id.TextUsername);
         textPassword = findViewById(R.id.TextPassword);
         buttonRegister = findViewById(R.id.buttonRegister);
+
+        ImageView iconback = findViewById(R.id.imageBack);
+
+        iconback.setOnClickListener(view -> {
+            Intent intent = new Intent(FormRegister.this, DashBoardPertama.class);
+            startActivity(intent);
+        });
 
         buttonRegister.setOnClickListener(v -> {
             String email = textEmail.getText().toString().trim();

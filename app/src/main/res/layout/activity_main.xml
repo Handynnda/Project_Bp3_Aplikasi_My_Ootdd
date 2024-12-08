@@ -8,9 +8,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="800dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="420dp"
+        android:layout_height="890dp"
         android:background="@drawable/rounded_corner2"
         android:elevation="12dp"
         android:gravity="center"
@@ -24,7 +23,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:text="SELAMAT DATANG \nDI APLIKASI\n MY OOTD"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -33,7 +31,7 @@
 
         <ImageView
             android:id="@+id/imageDashBoard"
-            android:layout_width="196dp"
+            android:layout_width="296dp"
             android:layout_height="328dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"

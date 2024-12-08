@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="87dp"
                     app:srcCompat="@drawable/baju"
-                    android:onClick="onBajuclick"/>
+                    android:onClick="onBajuclick" />
 
                 <TextView
                     android:id="@+id/namab"
