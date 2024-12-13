@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AplikasiMyOotdd"
         tools:targetApi="31">
         <activity
+            android:name=".Form_Admin"
+            android:exported="false" />
+        <activity
             android:name=".Form_Detail"
             android:exported="false" />
         <activity

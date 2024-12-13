@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -17,6 +18,7 @@ public class Form_Pembayaran extends AppCompatActivity {
     private EditText inputNamaPembeli, inputAlamat, inputJumlah;
     private RadioGroup radioGroupMetode;
     private Button buttonSubmit;
+    private ImageView imageBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

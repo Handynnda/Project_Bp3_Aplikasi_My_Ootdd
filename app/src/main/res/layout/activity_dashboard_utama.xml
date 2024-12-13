@@ -74,104 +74,117 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:background="@color/white"
             android:elevation="16dp"
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="332dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner3"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/imagedm"
-                        android:layout_width="31dp"
-                        android:layout_height="35dp"
-                        android:layout_weight="1"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4dp"
                         app:srcCompat="@drawable/diamond" />
 
                     <TextView
                         android:id="@+id/textkualitas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="10dp"
                         android:text="Kualitas Bahan\n Premium" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/imagedelivery"
                         android:layout_width="50dp"
-                        android:layout_height="35dp"
-                        android:layout_weight="1"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="11dp"
                         app:srcCompat="@drawable/delivery_car" />
 
                     <TextView
                         android:id="@+id/textpengiriman"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Pengiriman tepat\n waktu" />
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Pengiriman tepat waktu" />
                 </LinearLayout>
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:id="@+id/buttonLokasi"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:elevation="7dp"
+                    android:background="@drawable/rounded_corner3"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imagetime"
-                        android:layout_width="32dp"
-                        android:layout_height="35dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/time_left" />
+                        android:id="@+id/imagelocation"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4dp"
+                        app:srcCompat="@drawable/lokasi" />
 
                     <TextView
-                        android:id="@+id/textgaransi"
+                        android:id="@+id/textLokasi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Garansi Produk\n 1 Tahun" />
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Lokasi Toko \n Kami" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:id="@+id/buttonBertanya"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:elevation="7dp"
+                    android:background="@drawable/rounded_corner3"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/imageadmin"
-                        android:layout_width="30dp"
-                        android:layout_height="35dp"
-                        android:layout_weight="1"
+                        android:layout_width="50dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4dp"
                         app:srcCompat="@drawable/support" />
 
                     <TextView
-                        android:id="@+id/textbetanya"
+                        android:id="@+id/textbertanya"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="10dp"
                         android:text="Mau Bertanya\n Ke Admin ?" />
                 </LinearLayout>
 
@@ -188,7 +201,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="115dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
