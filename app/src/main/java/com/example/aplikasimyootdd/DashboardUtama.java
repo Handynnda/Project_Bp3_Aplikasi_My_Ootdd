@@ -32,11 +32,16 @@ public class DashboardUtama extends AppCompatActivity {
             public void onClick(View v) {
                 String mapsUrl = "https://maps.app.goo.gl/gnanWXipAhydj5Qe7?g_st=com.google.maps.preview.copy";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(mapsUrl));
-                intent.setPackage("com.google.android.apps.maps");
-                startActivity(intent);
+                try {
+                    // Set package untuk Google Maps
+                    intent.setPackage("com.google.android.apps.maps");
+                    startActivity(intent);
+                } catch (Exception e) {
+                    // Jika Google Maps tidak tersedia, gunakan browser default
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(mapsUrl)));
+                }
             }
         });
-
 
         TextView textLogout = findViewById(R.id.textLogout);
         textLogout.setOnClickListener(new View.OnClickListener() {
