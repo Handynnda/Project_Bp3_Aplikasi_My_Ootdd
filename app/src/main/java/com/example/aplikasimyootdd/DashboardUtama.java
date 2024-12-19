@@ -33,11 +33,9 @@ public class DashboardUtama extends AppCompatActivity {
                 String mapsUrl = "https://maps.app.goo.gl/gnanWXipAhydj5Qe7?g_st=com.google.maps.preview.copy";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(mapsUrl));
                 try {
-                    // Set package untuk Google Maps
                     intent.setPackage("com.google.android.apps.maps");
                     startActivity(intent);
                 } catch (Exception e) {
-                    // Jika Google Maps tidak tersedia, gunakan browser default
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(mapsUrl)));
                 }
             }

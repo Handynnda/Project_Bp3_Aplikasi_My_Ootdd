@@ -11,7 +11,7 @@
     <color name="hintColor">#9E9E9E</color>
 
     <!-- Warna Latar Belakang -->
-    <color name="DefaultColor">#F5F5F5</color>
+    <color name="DefaultColor">#D4D4D4</color>
 
     <!-- Warna Error -->
     <color name="redColor">#FF0000</color>

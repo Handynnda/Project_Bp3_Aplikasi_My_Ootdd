@@ -7,24 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".form_jaket">
 
-    <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="800dp"
-        android:background="@drawable/rounded_corner2"
-        android:elevation="12dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="890dp"
+        android:background="@color/DefaultColor"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -35,10 +36,10 @@
                 android:src="@drawable/iconback" />
 
             <LinearLayout
-                android:layout_width="275dp"
+                android:layout_width="285dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
-                android:background="@drawable/search_bar_background"
+                android:background="@drawable/rounded_corner"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -50,10 +51,11 @@
 
                 <EditText
                     android:id="@+id/search_input"
-                    android:layout_width="170dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
                     android:hint="Cari Jaket"
+                    android:layout_marginStart="10dp"
                     android:inputType="text"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -62,23 +64,24 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket"
-                    android:layout_width="wrap_content"
-                    android:layout_height="89dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/jaket"
                     android:onClick="onJaketclick" />
 
@@ -87,6 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="10dp"
+                    android:layout_marginTop="24dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:text="bomber classik grey " />
@@ -103,16 +107,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="86dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/jaket2"
                     android:onClick="onJaket2click" />
 
@@ -120,6 +125,7 @@
                     android:id="@+id/namaj2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
@@ -137,16 +143,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="95dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/jaket3"
                     android:onClick="onJaket3click" />
 
@@ -154,6 +161,7 @@
                     android:id="@+id/namaj3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
@@ -172,23 +180,24 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket4"
                     android:layout_width="wrap_content"
-                    android:layout_height="88dp"
+                    android:layout_height="108dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket4"
                     android:onClick="onJaket4click" />
 
@@ -197,9 +206,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="10dp"
+                    android:layout_marginTop="24dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="jaket kulit\n pria" />
+                    android:text="jaket kulit pria" />
 
                 <TextView
                     android:id="@+id/hargaj4"
@@ -213,8 +223,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -222,7 +232,8 @@
                 <ImageView
                     android:id="@+id/jaket5"
                     android:layout_width="wrap_content"
-                    android:layout_height="95dp"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket5"
                     android:onClick="onJaket5click" />
 
@@ -231,6 +242,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="10dp"
+                    android:layout_marginTop="14dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:text="Crooped wol-jaket" />
@@ -247,8 +259,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -256,7 +268,8 @@
                 <ImageView
                     android:id="@+id/jaket6"
                     android:layout_width="wrap_content"
-                    android:layout_height="88dp"
+                    android:layout_height="108dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket6"
                     android:onClick="onJaket6click" />
 
@@ -265,6 +278,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="10dp"
+                    android:layout_marginTop="24dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:text="denim jaket hope" />
@@ -282,23 +296,24 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket7"
                     android:layout_width="wrap_content"
-                    android:layout_height="87dp"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket7"
                     android:onClick="onJaket7click" />
 
@@ -306,6 +321,7 @@
                     android:id="@+id/namaj7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:text="goster knit sweater"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -323,8 +339,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -332,7 +348,8 @@
                 <ImageView
                     android:id="@+id/jaket8"
                     android:layout_width="wrap_content"
-                    android:layout_height="88dp"
+                    android:layout_height="108dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket8"
                     android:onClick="onJaket8click" />
 
@@ -340,6 +357,7 @@
                     android:id="@+id/namaj8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:text="jaket gorpcore shelter desert"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -357,8 +375,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
@@ -366,7 +384,8 @@
                 <ImageView
                     android:id="@+id/jaket9"
                     android:layout_width="wrap_content"
-                    android:layout_height="77dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket9"
                     android:onClick="onJaket9click" />
 
@@ -375,6 +394,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="jaket in brown loewe"
+                    android:layout_marginTop="24dp"
+
                     android:textAlignment="center"
                     android:textSize="10dp"
                     android:textStyle="bold" />
@@ -392,23 +413,25 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket"
                     android:onClick="onJaket10click" />
 
@@ -416,10 +439,11 @@
                     android:id="@+id/namaj10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="jaket bomber pria" />
 
                 <TextView
                     android:id="@+id/hargaj10"
@@ -433,16 +457,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket"
                     android:onClick="onJaket11click" />
 
@@ -450,10 +475,11 @@
                     android:id="@+id/namaj11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="jaket bomber pria" />
 
                 <TextView
                     android:id="@+id/hargaj11"
@@ -467,16 +493,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/jaket12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/jaket"
                     android:onClick="onJaket12click" />
 
@@ -484,10 +511,11 @@
                     android:id="@+id/namaj12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="jaket bomber pria" />
 
                 <TextView
                     android:id="@+id/hargaj12"
@@ -503,4 +531,6 @@
 
 
     </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

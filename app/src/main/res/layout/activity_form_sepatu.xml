@@ -7,33 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".form_sepatu">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal">
-
-            <LinearLayout
-                android:layout_width="380dp"
-                android:layout_height="800dp"
-                android:background="@drawable/rounded_corner2"
-                android:elevation="12dp"
-                android:orientation="vertical">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="890dp"
+             android:background="@color/DefaultColor"
+             android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="330dp"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -44,10 +36,10 @@
                         android:src="@drawable/iconback" />
 
                     <LinearLayout
-                        android:layout_width="275dp"
+                        android:layout_width="285dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
-                        android:background="@drawable/search_bar_background"
+                        android:background="@drawable/rounded_corner"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
@@ -59,10 +51,11 @@
 
                         <EditText
                             android:id="@+id/search_input"
-                            android:layout_width="170dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:hint="Cari Sepatu"
+                            android:layout_marginStart="10dp"
                             android:inputType="text"
                             android:textColor="@color/black"
                             android:textColorHint="@color/black"
@@ -71,29 +64,31 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="330dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
+                        android:layout_marginStart="10dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="88dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="107dp"
+                            android:layout_marginTop="6dp"
                             app:srcCompat="@drawable/sepatu" />
 
                         <TextView
                             android:id="@+id/namas"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
                             android:text="Adidas Samba white"
                             android:textAlignment="center"
                             android:textSize="10dp"
@@ -111,22 +106,24 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="86dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="102dp"
+                            android:layout_marginTop="6dp"
                             app:srcCompat="@drawable/sepatu2" />
 
                         <TextView
                             android:id="@+id/namas2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
                             android:text="Sepatu Dokmart Hight"
                             android:textAlignment="center"
                             android:textSize="10dp"
@@ -144,22 +141,24 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="96dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="117dp"
+                            android:layout_marginTop="4dp"
                             app:srcCompat="@drawable/sepatu3" />
 
                         <TextView
                             android:id="@+id/namas3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
                             android:text="converse AllStar"
                             android:textAlignment="center"
                             android:textSize="10dp"
@@ -178,23 +177,24 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="330dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
+                        android:layout_marginStart="10dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="89dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="109dp"
+                            android:layout_marginTop="4dp"
                             app:srcCompat="@drawable/sepatu4" />
 
                         <TextView
@@ -203,6 +203,7 @@
                             android:layout_height="wrap_content"
                             android:text="New Balance 310 white"
                             android:textAlignment="center"
+                            android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -218,16 +219,17 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="89dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="109dp"
+                            android:layout_marginTop="4dp"
                             app:srcCompat="@drawable/sepatu5" />
 
                         <TextView
@@ -236,6 +238,7 @@
                             android:layout_height="wrap_content"
                             android:text="Adidas Samba black"
                             android:textAlignment="center"
+                            android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -251,16 +254,17 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="95dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="4dp"
                             app:srcCompat="@drawable/sepatu6" />
 
                         <TextView
@@ -269,6 +273,7 @@
                             android:layout_height="wrap_content"
                             android:text="Nike Air Jordan Low"
                             android:textAlignment="center"
+                            android:layout_marginTop="25dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -285,23 +290,24 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="330dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
+                        android:layout_marginStart="10dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="88dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="6dp"
                             app:srcCompat="@drawable/sepatu7" />
 
                         <TextView
@@ -310,6 +316,7 @@
                             android:layout_height="wrap_content"
                             android:text="Nike Air Jordan Hight"
                             android:textAlignment="center"
+                            android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -325,16 +332,17 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="88dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="6dp"
                             app:srcCompat="@drawable/sepatu8" />
 
                         <TextView
@@ -343,6 +351,7 @@
                             android:layout_height="wrap_content"
                             android:text="docmart woman low"
                             android:textAlignment="center"
+                            android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -358,16 +367,17 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="96dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="6dp"
                             app:srcCompat="@drawable/sepatu9" />
 
                         <TextView
@@ -376,6 +386,7 @@
                             android:layout_height="wrap_content"
                             android:text="Ventela public low Black"
                             android:textAlignment="center"
+                            android:layout_marginTop="20dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -392,23 +403,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="330dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
+                        android:layout_marginStart="10dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/sepatu10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="90dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="5dp"
                             app:srcCompat="@drawable/sepatu" />
 
                         <TextView
@@ -417,6 +430,7 @@
                             android:layout_height="wrap_content"
                             android:text="Celana Pria Pendek"
                             android:textAlignment="center"
+                            android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -432,8 +446,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
@@ -441,7 +455,8 @@
                         <ImageView
                             android:id="@+id/sepatu11"
                             android:layout_width="wrap_content"
-                            android:layout_height="90dp"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="5dp"
                             app:srcCompat="@drawable/sepatu" />
 
                         <TextView
@@ -450,6 +465,7 @@
                             android:layout_height="wrap_content"
                             android:text="Celana Pria Pendek"
                             android:textAlignment="center"
+                            android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -465,8 +481,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="83dp"
-                        android:layout_height="155dp"
+                        android:layout_width="113dp"
+                        android:layout_height="185dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/rounded_corner"
                         android:orientation="vertical">
@@ -474,7 +490,9 @@
                         <ImageView
                             android:id="@+id/sepatu12"
                             android:layout_width="wrap_content"
-                            android:layout_height="90dp"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="5dp"
+
                             app:srcCompat="@drawable/sepatu" />
 
                         <TextView
@@ -483,6 +501,7 @@
                             android:layout_height="wrap_content"
                             android:text="Celana Pria Pendek"
                             android:textAlignment="center"
+                            android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
@@ -500,6 +519,5 @@
 
             </LinearLayout>
 
-        </LinearLayout>
     </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>

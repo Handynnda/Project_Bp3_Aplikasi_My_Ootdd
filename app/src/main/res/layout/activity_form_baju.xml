@@ -7,21 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".form_baju">
 
-    <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="800dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_corner2"
-        android:elevation="12dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="890dp"
+        android:background="@color/DefaultColor"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
@@ -35,10 +36,10 @@
                 android:src="@drawable/iconback" />
 
             <LinearLayout
-                android:layout_width="275dp"
+                android:layout_width="285dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
-                android:background="@drawable/search_bar_background"
+                android:background="@drawable/rounded_corner22"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -50,7 +51,7 @@
 
                 <EditText
                     android:id="@+id/search_input"
-                    android:layout_width="170dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
                     android:hint="Cari Baju"
@@ -62,23 +63,24 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju"
-                    android:layout_width="wrap_content"
-                    android:layout_height="87dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju"
                     android:onClick="onBajuclick" />
 
@@ -86,6 +88,7 @@
                     android:id="@+id/namab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:text="kaos polos putih"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -103,16 +106,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="89dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju2"
                     android:onClick="onBaju2click" />
 
@@ -120,6 +124,7 @@
                     android:id="@+id/namab2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:text="kaos motiv belang"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -137,16 +142,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="93dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju3"
                     android:onClick="onBaju3click" />
 
@@ -154,6 +160,7 @@
                     android:id="@+id/namab3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="baju olahraga motiv"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -172,23 +179,24 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="94dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju4"
                     android:onClick="onBaju4click" />
 
@@ -196,6 +204,7 @@
                     android:id="@+id/namab4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="kemeja coklat pendek"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -213,16 +222,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="91dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju5"
                     android:onClick="onBaju5click" />
 
@@ -230,6 +240,7 @@
                     android:id="@+id/namab5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="kemeja denim panjang"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -247,16 +258,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="87dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju6"
                     android:onClick="onBaju6click" />
 
@@ -264,6 +276,7 @@
                     android:id="@+id/namab6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="kemeja formal panjang"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -282,23 +295,24 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="95dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju7"
                     android:onClick="onBaju7click" />
 
@@ -306,6 +320,7 @@
                     android:id="@+id/namab7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="rompi anak motiv dino"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -323,16 +338,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="86dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju8"
                     android:onClick="onBaju8click" />
 
@@ -340,6 +356,7 @@
                     android:id="@+id/namab8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="kaos polo original"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -357,16 +374,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="86dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju9"
                     android:onClick="onBaju9click" />
 
@@ -374,6 +392,7 @@
                     android:id="@+id/namab9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="baju croptop merah maron"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -392,23 +411,25 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju"
                     android:onClick="onBaju10click" />
 
@@ -416,6 +437,7 @@
                     android:id="@+id/namab10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Celana Pria Pendek"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -433,16 +455,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju"
                     android:onClick="onBaju11click" />
 
@@ -450,6 +473,7 @@
                     android:id="@+id/namab11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Celana Pria Pendek"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -467,16 +491,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="83dp"
-                android:layout_height="155dp"
+                android:layout_width="113dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/rounded_corner"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/baju12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="6dp"
                     app:srcCompat="@drawable/baju"
                     android:onClick="onBaju12click" />
 
@@ -484,6 +509,7 @@
                     android:id="@+id/namab12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Celana Pria Pendek"
                     android:textAlignment="center"
                     android:textSize="10dp"
@@ -503,4 +529,5 @@
 
 
     </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
