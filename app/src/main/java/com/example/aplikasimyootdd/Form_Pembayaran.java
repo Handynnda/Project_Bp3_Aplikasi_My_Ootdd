@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Pembayaran extends AppCompatActivity {
 
-    private TextView textNamaBarang;
+    private TextView textNamaBarang, textHargaBarang;
     private EditText inputNamaPembeli, inputAlamat, inputJumlah;
     private RadioGroup radioGroupMetode;
     private Button buttonSubmit;
@@ -27,17 +27,23 @@ public class Form_Pembayaran extends AppCompatActivity {
 
         // Inisialisasi view dari layout
         textNamaBarang = findViewById(R.id.textNamaBarang);
+        textHargaBarang = findViewById(R.id.textHargaBarang); // Referensi harga barang
         inputNamaPembeli = findViewById(R.id.inputNamaPembeli);
         inputAlamat = findViewById(R.id.inputAlamat);
         inputJumlah = findViewById(R.id.inputJumlah);
         radioGroupMetode = findViewById(R.id.radioGroupMetode);
         buttonSubmit = findViewById(R.id.buttonSubmit);
+        imageBack = findViewById(R.id.imageView);
 
         // Mendapatkan data barang dari Intent
         Intent intent = getIntent();
-        String namaBarang = intent.getStringExtra("namaBarang");
-        double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
-        textNamaBarang.setText(namaBarang);
+        String namaProduk = intent.getStringExtra("namaProduk");
+        double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);
+        String asalForm = intent.getStringExtra("asalForm");
+
+        // Menampilkan nama dan harga barang
+        textNamaBarang.setText(namaProduk);
+        textHargaBarang.setText(String.format("Rp. %,d", (int) hargaProduk));
 
         // Aksi pada tombol submit
         buttonSubmit.setOnClickListener(v -> {
@@ -64,10 +70,35 @@ public class Form_Pembayaran extends AppCompatActivity {
             konfirmasiIntent.putExtra("namaPembeli", namaPembeli);
             konfirmasiIntent.putExtra("alamatPembeli", alamat);
             konfirmasiIntent.putExtra("jumlahBarang", jumlahBarang);
-            konfirmasiIntent.putExtra("hargaBarang", hargaBarang);
+            konfirmasiIntent.putExtra("hargaBarang", hargaProduk);
             konfirmasiIntent.putExtra("metodePembayaran", metodePembayaran);
 
             startActivity(konfirmasiIntent);
+        });
+
+        // Aksi pada ikon kembali
+        imageBack.setOnClickListener(v -> {
+            if (asalForm != null) {
+                switch (asalForm) {
+                    case "formCelana":
+                        startActivity(new Intent(this, form_celana.class));
+                        break;
+                    case "formBaju":
+                        startActivity(new Intent(this, form_baju.class));
+                        break;
+                    case "formJaket":
+                        startActivity(new Intent(this, form_jaket.class));
+                        break;
+                    case "formSepatu":
+                        startActivity(new Intent(this, form_sepatu.class));
+                        break;
+                    default:
+                        finish(); // Kembali ke aktivitas sebelumnya
+                        break;
+                }
+            } else {
+                finish(); // Jika asal tidak diketahui, hanya kembali ke aktivitas sebelumnya
+            }
         });
     }
 }
