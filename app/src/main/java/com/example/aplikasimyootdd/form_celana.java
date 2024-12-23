@@ -56,6 +56,8 @@ public class form_celana extends AppCompatActivity {
                     Intent intent = new Intent(form_celana.this, Form_Pembayaran.class);
                     intent.putExtra("namaProduk", namaProduk);
                     intent.putExtra("hargaProduk", hargaProduk);
+                    intent.putExtra("asalForm", "formCelana");
+
                     startActivity(intent);
                 });
             }

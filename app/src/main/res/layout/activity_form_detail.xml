@@ -45,6 +45,9 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp" />
+
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -80,6 +83,17 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/textUkuranBarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ukuran Produk"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginTop="8dp"/>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

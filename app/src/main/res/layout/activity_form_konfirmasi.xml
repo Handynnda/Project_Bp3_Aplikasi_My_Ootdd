@@ -70,6 +70,18 @@
                         android:textSize="16sp"
                         android:layout_marginTop="8dp"
                         android:textColor="#666666"/>
+
+                    <!-- TextView untuk ukuran barang -->
+                    <TextView
+                        android:id="@+id/textUkuranBarang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ukuran Produk"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:layout_marginTop="8dp"/>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

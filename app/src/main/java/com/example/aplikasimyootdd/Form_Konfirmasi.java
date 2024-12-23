@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Konfirmasi extends AppCompatActivity {
 
-    private TextView textNamaPembeli, textAlamatPembeli, textTotalHarga, textMetodePembayaran;
+    private TextView textNamaPembeli, textAlamatPembeli, textTotalHarga, textMetodePembayaran, textUkuranBarang;
     private ImageView imageViewQR, imageViewBack;
     private Button buttonSelesai;
 
@@ -25,6 +25,7 @@ public class Form_Konfirmasi extends AppCompatActivity {
         textAlamatPembeli = findViewById(R.id.textAlamatPembeli);
         textTotalHarga = findViewById(R.id.textTotalPembayaran);
         textMetodePembayaran = findViewById(R.id.textMetodePembayaran);
+        textUkuranBarang = findViewById(R.id.textUkuranBarang);  // Menambahkan TextView untuk ukuran barang
         imageViewQR = findViewById(R.id.imageViewQR);
         imageViewBack = findViewById(R.id.imageViewBack);
         buttonSelesai = findViewById(R.id.buttonSelesai);
@@ -35,12 +36,14 @@ public class Form_Konfirmasi extends AppCompatActivity {
         String alamatPembeli = intent.getStringExtra("alamatPembeli");
         double totalHarga = intent.getDoubleExtra("totalHarga", 0);
         String metodePembayaran = intent.getStringExtra("metodePembayaran");
+        String ukuranBarang = intent.getStringExtra("ukuranBarang");  // Ambil ukuran barang dari Intent
 
         // Menampilkan data di TextView
         textNamaPembeli.setText(namaPembeli);
         textAlamatPembeli.setText(alamatPembeli);
         textTotalHarga.setText(String.format("Rp. %,d", (int) totalHarga));
         textMetodePembayaran.setText(metodePembayaran);
+        textUkuranBarang.setText("Ukuran: " + ukuranBarang);  // Menampilkan ukuran barang
 
         // Tampilkan QR
         imageViewQR.setImageResource(R.drawable.img);
@@ -55,6 +58,7 @@ public class Form_Konfirmasi extends AppCompatActivity {
             detailIntent.putExtra("jumlahBeli", "2");  // Misal 2 produk
             detailIntent.putExtra("totalHarga", String.format("%,d", (int) totalHarga));  // Kirim harga dalam bentuk string
             detailIntent.putExtra("metodePembayaran", metodePembayaran);
+            detailIntent.putExtra("ukuranBarang", ukuranBarang);  // Kirim ukuran barang ke Form_Detail
             startActivity(detailIntent);
             finish();
         });

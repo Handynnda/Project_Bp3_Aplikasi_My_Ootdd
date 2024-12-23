@@ -56,6 +56,8 @@ public class form_baju extends AppCompatActivity {
                     Intent intent = new Intent(form_baju.this, Form_Pembayaran.class);
                     intent.putExtra("namaProduk", namaProduk);
                     intent.putExtra("hargaProduk", hargaProduk);
+                    intent.putExtra("asalForm", "formBaju");
+
                     startActivity(intent);
                 });
             }

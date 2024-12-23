@@ -56,6 +56,7 @@ public class form_sepatu extends AppCompatActivity {
                     Intent intent = new Intent(form_sepatu.this, Form_Pembayaran.class);
                     intent.putExtra("namaProduk", namaProduk);
                     intent.putExtra("hargaProduk", hargaProduk);
+                    intent.putExtra("asalForm", "formSepatu");
                     startActivity(intent);
                 });
             }

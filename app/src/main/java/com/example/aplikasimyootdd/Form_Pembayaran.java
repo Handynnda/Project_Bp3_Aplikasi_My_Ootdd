@@ -132,6 +132,7 @@ public class Form_Pembayaran extends AppCompatActivity {
             Toast.makeText(this, "Form tidak dikenali. Menggunakan ukuran default.", Toast.LENGTH_SHORT).show();
             ukuranArray = ukuranSepatuArray; // Default ukuran sepatu
         } else {
+            // Memilih ukuran berdasarkan asalForm yang diterima
             switch (asalForm) {
                 case "formSepatu":
                     ukuranArray = ukuranSepatuArray;
@@ -146,14 +147,14 @@ public class Form_Pembayaran extends AppCompatActivity {
                     ukuranArray = ukuranCelanaArray;
                     break;
                 default:
-                    ukuranArray = ukuranSepatuArray;  // Default ke ukuran sepatu jika tidak ada yang cocok
+                    ukuranArray = ukuranSepatuArray; // Default jika tidak ada kecocokan
                     break;
             }
         }
 
         builder.setItems(ukuranArray, (dialogInterface, item) -> {
-            selectedUkuran.setText(ukuranArray[item]);
-            dialogInterface.dismiss();
+            selectedUkuran.setText(ukuranArray[item]); // Menampilkan ukuran yang dipilih
+            dialogInterface.dismiss(); // Menutup dialog setelah memilih ukuran
         });
         builder.show();
     }

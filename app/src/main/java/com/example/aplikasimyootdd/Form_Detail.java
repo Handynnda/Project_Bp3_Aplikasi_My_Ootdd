@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Detail extends AppCompatActivity {
 
-    private TextView textNamaPembeli, textAlamatPembeli, textProduk, textJumlahBeli, textMetodePembayaran, textTotalPembayaran;
+    private TextView textNamaPembeli, textAlamatPembeli, textProduk, textJumlahBeli, textMetodePembayaran, textTotalPembayaran, textUkuranBarang;
     private Button buttonKembaliHome;
 
     @Override
@@ -24,6 +24,7 @@ public class Form_Detail extends AppCompatActivity {
         textJumlahBeli = findViewById(R.id.textJumlahBeli);
         textMetodePembayaran = findViewById(R.id.textMetodePembayaran);
         textTotalPembayaran = findViewById(R.id.textTotalPembayaran);
+        textUkuranBarang = findViewById(R.id.textUkuranBarang);  // Menambahkan TextView untuk ukuran barang
         buttonKembaliHome = findViewById(R.id.buttonKembaliHome);
 
         // Mendapatkan data dari Intent
@@ -34,6 +35,7 @@ public class Form_Detail extends AppCompatActivity {
         String jumlahBeli = intent.getStringExtra("jumlahBeli");
         String totalHarga = intent.getStringExtra("totalHarga");
         String metodePembayaran = intent.getStringExtra("metodePembayaran");
+        String ukuranBarang = intent.getStringExtra("ukuranBarang");  // Ambil ukuran barang dari Intent
 
         // Menampilkan data pada TextView
         textNamaPembeli.setText("Nama: " + namaPembeli);
@@ -42,6 +44,7 @@ public class Form_Detail extends AppCompatActivity {
         textJumlahBeli.setText("Jumlah Beli: " + jumlahBeli);
         textMetodePembayaran.setText("Metode: " + metodePembayaran);
         textTotalPembayaran.setText("Total: Rp. " + totalHarga);
+        textUkuranBarang.setText("Ukuran: " + ukuranBarang);  // Menampilkan ukuran barang
 
         // Tombol kembali ke halaman utama
         buttonKembaliHome.setOnClickListener(v -> {
