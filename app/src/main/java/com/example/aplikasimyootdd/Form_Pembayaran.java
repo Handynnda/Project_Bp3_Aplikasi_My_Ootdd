@@ -27,7 +27,7 @@ public class Form_Pembayaran extends AppCompatActivity {
 
         // Inisialisasi view dari layout
         textNamaBarang = findViewById(R.id.textNamaBarang);
-        textHargaBarang = findViewById(R.id.textHargaBarang); // Referensi harga barang
+        textHargaBarang = findViewById(R.id.textHargaBarang);
         inputNamaPembeli = findViewById(R.id.inputNamaPembeli);
         inputAlamat = findViewById(R.id.inputAlamat);
         inputJumlah = findViewById(R.id.inputJumlah);
@@ -47,7 +47,6 @@ public class Form_Pembayaran extends AppCompatActivity {
 // Pastikan harga tampil dengan format Rp.
         textHargaBarang.setText(String.format("Rp. %,d", (int) hargaProduk));
 
-        // Aksi pada tombol submit
         buttonSubmit.setOnClickListener(v -> {
             String namaPembeli = inputNamaPembeli.getText().toString();
             String alamat = inputAlamat.getText().toString();
@@ -63,6 +62,9 @@ public class Form_Pembayaran extends AppCompatActivity {
             // Parsing jumlah barang
             int jumlahBarang = Integer.parseInt(jumlahStr);
 
+            // Menghitung total harga
+            double totalHarga = hargaProduk * jumlahBarang;
+
             // Mendapatkan metode pembayaran yang dipilih
             RadioButton selectedMetode = findViewById(metodeId);
             String metodePembayaran = selectedMetode.getText().toString();
@@ -72,7 +74,7 @@ public class Form_Pembayaran extends AppCompatActivity {
             konfirmasiIntent.putExtra("namaPembeli", namaPembeli);
             konfirmasiIntent.putExtra("alamatPembeli", alamat);
             konfirmasiIntent.putExtra("jumlahBarang", jumlahBarang);
-            konfirmasiIntent.putExtra("hargaBarang", hargaProduk);
+            konfirmasiIntent.putExtra("totalHarga", totalHarga);  // Kirim total harga
             konfirmasiIntent.putExtra("metodePembayaran", metodePembayaran);
 
             startActivity(konfirmasiIntent);

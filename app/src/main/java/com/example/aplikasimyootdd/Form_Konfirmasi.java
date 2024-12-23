@@ -3,6 +3,7 @@ package com.example.aplikasimyootdd;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -10,61 +11,45 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Konfirmasi extends AppCompatActivity {
 
-    private TextView textNamaPembeli, textAlamatPembeli, textTotalPembayaran, textMetodePembayaran, textInfoPembayaran;
-    private Button buttonUploadBukti, buttonKonfirmasiPembayaran;
+    private TextView textNamaPembeli, textAlamatPembeli, textTotalHarga, textMetodePembayaran;
+    private ImageView imageViewQR;
+    private Button buttonSelesai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_konfirmasi);
 
+        // Inisialisasi view dari layout
         textNamaPembeli = findViewById(R.id.textNamaPembeli);
         textAlamatPembeli = findViewById(R.id.textAlamatPembeli);
-        textTotalPembayaran = findViewById(R.id.textTotalPembayaran);
+        textTotalHarga = findViewById(R.id.textTotalPembayaran);
         textMetodePembayaran = findViewById(R.id.textMetodePembayaran);
-        textInfoPembayaran = findViewById(R.id.textInfoPembayaran);
-        buttonUploadBukti = findViewById(R.id.buttonUploadBukti);
-        buttonKonfirmasiPembayaran = findViewById(R.id.buttonKonfirmasiPembayaran);
+        imageViewQR = findViewById(R.id.imageViewQR);
+        buttonSelesai = findViewById(R.id.buttonSelesai);
 
+        // Mendapatkan data dari intent
         Intent intent = getIntent();
         String namaPembeli = intent.getStringExtra("namaPembeli");
         String alamatPembeli = intent.getStringExtra("alamatPembeli");
-        int jumlahBarang = intent.getIntExtra("jumlahBarang", 1);
-        double hargaBarang = intent.getDoubleExtra("hargaBarang", 0);
+        double totalHarga = intent.getDoubleExtra("totalHarga", 0);
         String metodePembayaran = intent.getStringExtra("metodePembayaran");
 
-        double totalPembayaran = hargaBarang * jumlahBarang;
-
+        // Menampilkan data di TextView
         textNamaPembeli.setText(namaPembeli);
         textAlamatPembeli.setText(alamatPembeli);
-        textTotalPembayaran.setText("Rp " + String.format("%.2f", totalPembayaran));
+        textTotalHarga.setText(String.format("Rp. %,d", (int) totalHarga));
         textMetodePembayaran.setText(metodePembayaran);
 
-        if (metodePembayaran.equalsIgnoreCase("Transfer Bank")) {
-            textInfoPembayaran.setText("Nomor Rekening: 879654312 (Bank BNI)");
-        } else if (metodePembayaran.equalsIgnoreCase("E-Wallet")) {
-            textInfoPembayaran.setText("Nomor E-Wallet: 081234567890 (GoPay)");
-        } else {
-            textInfoPembayaran.setText("Informasi pembayaran tidak tersedia");
-        }
+        // Tampilkan QR (Ganti dengan QR asli jika diperlukan)
+        imageViewQR.setImageResource(R.drawable.img);
 
-        buttonUploadBukti.setOnClickListener(v ->
-                Toast.makeText(this, "Pilih bukti pembayaran untuk diupload", Toast.LENGTH_SHORT).show()
-        );
-
-        buttonKonfirmasiPembayaran.setOnClickListener(v -> {
-            Toast.makeText(this, "Pembayaran berhasil dikonfirmasi!", Toast.LENGTH_SHORT).show();
-
-            Intent detailIntent = new Intent(this, Form_Detail.class);
-            detailIntent.putExtra("namaPembeli", namaPembeli);
-            detailIntent.putExtra("alamatPembeli", alamatPembeli);
-            detailIntent.putExtra("namaProduk", "Produk Anda"); // Ganti sesuai dengan data produk jika ada
-            detailIntent.putExtra("jumlahBeli", jumlahBarang);
-            detailIntent.putExtra("hargaProduk", hargaBarang);
-            detailIntent.putExtra("metodePembayaran", metodePembayaran);
-
-            startActivity(detailIntent);
-            finish(); // Menutup halaman ini
+        // Tombol selesai
+        buttonSelesai.setOnClickListener(v -> {
+            Toast.makeText(this, "Terima kasih, pembayaran sedang diproses!", Toast.LENGTH_SHORT).show();
+            Intent intentMain = new Intent(this, MainActivity.class);
+            startActivity(intentMain);
+            finish();
         });
     }
 }
