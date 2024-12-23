@@ -36,12 +36,27 @@ public class form_jaket extends AppCompatActivity {
 
         TextView namaj1 = findViewById(R.id.namaj);
         TextView hargaj1 = findViewById(R.id.hargaj);
+
         jaket1.setOnClickListener(view -> {
+            String namaProduk = namaj1.getText().toString();
+            String hargaString = hargaj1.getText().toString();
+
+            // Pastikan format parsing aman
+            double hargaProduk = 0;
+            try {
+                // Hapus semua karakter selain angka
+                String cleanHarga = hargaString.replaceAll("[^\\d]", "");
+                hargaProduk = Double.parseDouble(cleanHarga);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+
             Intent intent = new Intent(form_jaket.this, Form_Pembayaran.class);
-            intent.putExtra("namaProduk", namaj1.getText().toString());
-            intent.putExtra("hargaProduk", hargaj1.getText().toString());
+            intent.putExtra("namaProduk", namaProduk);
+            intent.putExtra("hargaProduk", hargaProduk);  // Kirim sebagai double
             startActivity(intent);
         });
+
 
         TextView namaj2 = findViewById(R.id.namaj2);
         TextView hargaj2 = findViewById(R.id.hargaj2);

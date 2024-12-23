@@ -38,11 +38,13 @@ public class Form_Pembayaran extends AppCompatActivity {
         // Mendapatkan data barang dari Intent
         Intent intent = getIntent();
         String namaProduk = intent.getStringExtra("namaProduk");
-        double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);
+        double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);  // Terima sebagai double
         String asalForm = intent.getStringExtra("asalForm");
 
-        // Menampilkan nama dan harga barang
+// Menampilkan nama dan harga barang
         textNamaBarang.setText(namaProduk);
+
+// Pastikan harga tampil dengan format Rp.
         textHargaBarang.setText(String.format("Rp. %,d", (int) hargaProduk));
 
         // Aksi pada tombol submit
