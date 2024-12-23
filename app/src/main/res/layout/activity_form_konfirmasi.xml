@@ -106,24 +106,23 @@
         <Button
             android:id="@+id/buttonUploadBukti"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:text="Pilih Bukti Pembayaran"
             android:background="@color/DefaultColor"
             android:textColor="@android:color/white"
             android:textSize="16sp"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            android:padding="1dp"
+            android:layout_marginBottom="5dp" />
 
         <!-- Tombol Konfirmasi Pembayaran -->
         <Button
             android:id="@+id/buttonKonfirmasiPembayaran"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:text="Konfirmasi Pembayaran"
             android:background="@color/DefaultColor"
             android:textColor="@android:color/white"
             android:textSize="16sp"
-            android:padding="12dp"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="5dp" />
     </LinearLayout>
 </ScrollView>

@@ -123,12 +123,11 @@
         <Button
             android:id="@+id/buttonKembaliHome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
             android:text="Kembali ke Home"
             android:background="@color/primaryColor"
             android:textColor="@android:color/white"
             android:textSize="16sp"
-            android:padding="12dp"
             android:layout_marginTop="16dp" />
     </LinearLayout>
 </ScrollView>

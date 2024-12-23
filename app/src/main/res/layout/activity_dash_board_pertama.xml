@@ -36,7 +36,7 @@
         <LinearLayout
             android:id="@+id/ButtonLogin"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
             android:layout_marginTop="95dp"
             android:background="@drawable/rounded_corner"
@@ -50,14 +50,14 @@
                 android:text="LOGIN"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="35dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ButtonRegister"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/rounded_corner"
@@ -71,7 +71,7 @@
                 android:text="REGISTER"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="35dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
         </LinearLayout>
 

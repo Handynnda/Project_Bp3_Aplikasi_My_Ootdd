@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SELAMAT DATANG \nDI APLIKASI\n MY OOTD"
+            android:text="SELAMAT DATANG \nDI APLIKASI\n My Outfit Of The Day"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30sp"
