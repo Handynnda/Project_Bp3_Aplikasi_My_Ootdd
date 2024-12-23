@@ -2,6 +2,7 @@ package com.example.aplikasimyootdd;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -9,16 +10,19 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import android.text.TextUtils;
 
 public class Form_Pembayaran extends AppCompatActivity {
 
-    private TextView textNamaBarang, textHargaBarang;
+    private TextView textNamaBarang, textHargaBarang, selectedUkuran;
     private EditText inputNamaPembeli, inputAlamat, inputJumlah;
     private RadioGroup radioGroupMetode;
     private Button buttonSubmit;
     private ImageView imageBack;
+    private String[] ukuranSepatuArray, ukuranBajuArray, ukuranJaketArray, ukuranCelanaArray;
+    private String asalForm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class Form_Pembayaran extends AppCompatActivity {
         inputNamaPembeli = findViewById(R.id.inputNamaPembeli);
         inputAlamat = findViewById(R.id.inputAlamat);
         inputJumlah = findViewById(R.id.inputJumlah);
+        selectedUkuran = findViewById(R.id.datalistview); // Ukuran
         radioGroupMetode = findViewById(R.id.radioGroupMetode);
         buttonSubmit = findViewById(R.id.buttonSubmit);
         imageBack = findViewById(R.id.imageView);
@@ -38,31 +43,39 @@ public class Form_Pembayaran extends AppCompatActivity {
         // Mendapatkan data barang dari Intent
         Intent intent = getIntent();
         String namaProduk = intent.getStringExtra("namaProduk");
-        double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);  // Terima sebagai double
-        String asalForm = intent.getStringExtra("asalForm");
+        double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);
+        asalForm = intent.getStringExtra("asalForm");
 
-// Menampilkan nama dan harga barang
+        // Debugging asalForm
+        Log.d("Form_Pembayaran", "asalForm: " + asalForm);
+
+        // Menampilkan nama dan harga barang
         textNamaBarang.setText(namaProduk);
-
-// Pastikan harga tampil dengan format Rp.
         textHargaBarang.setText(String.format("Rp. %,d", (int) hargaProduk));
+
+        // Inisialisasi array ukuran
+        ukuranSepatuArray = getResources().getStringArray(R.array.list_ukuran_sepatu);
+        ukuranBajuArray = getResources().getStringArray(R.array.list_ukuran_baju);
+        ukuranJaketArray = getResources().getStringArray(R.array.list_ukuran_jaket);
+        ukuranCelanaArray = getResources().getStringArray(R.array.list_ukuran_celana);
+
+        // Klik TextView untuk memilih ukuran
+        selectedUkuran.setOnClickListener(view -> showUkuranDialog());
 
         buttonSubmit.setOnClickListener(v -> {
             String namaPembeli = inputNamaPembeli.getText().toString();
             String alamat = inputAlamat.getText().toString();
             String jumlahStr = inputJumlah.getText().toString();
+            String ukuran = selectedUkuran.getText().toString();
             int metodeId = radioGroupMetode.getCheckedRadioButtonId();
 
             // Validasi input
-            if (namaPembeli.isEmpty() || alamat.isEmpty() || jumlahStr.isEmpty() || metodeId == -1) {
+            if (TextUtils.isEmpty(namaPembeli) || TextUtils.isEmpty(alamat) || TextUtils.isEmpty(jumlahStr) || TextUtils.isEmpty(ukuran) || metodeId == -1) {
                 Toast.makeText(this, "Mohon lengkapi semua data!", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            // Parsing jumlah barang
             int jumlahBarang = Integer.parseInt(jumlahStr);
-
-            // Menghitung total harga
             double totalHarga = hargaProduk * jumlahBarang;
 
             // Mendapatkan metode pembayaran yang dipilih
@@ -74,8 +87,9 @@ public class Form_Pembayaran extends AppCompatActivity {
             konfirmasiIntent.putExtra("namaPembeli", namaPembeli);
             konfirmasiIntent.putExtra("alamatPembeli", alamat);
             konfirmasiIntent.putExtra("jumlahBarang", jumlahBarang);
-            konfirmasiIntent.putExtra("totalHarga", totalHarga);  // Kirim total harga
+            konfirmasiIntent.putExtra("totalHarga", totalHarga);
             konfirmasiIntent.putExtra("metodePembayaran", metodePembayaran);
+            konfirmasiIntent.putExtra("ukuranBarang", ukuran);
 
             startActivity(konfirmasiIntent);
         });
@@ -97,12 +111,50 @@ public class Form_Pembayaran extends AppCompatActivity {
                         startActivity(new Intent(this, form_sepatu.class));
                         break;
                     default:
-                        finish(); // Kembali ke aktivitas sebelumnya
+                        finish();
                         break;
                 }
             } else {
-                finish(); // Jika asal tidak diketahui, hanya kembali ke aktivitas sebelumnya
+                finish();
             }
         });
+    }
+
+    // Menampilkan dialog ukuran sesuai asal form
+    private void showUkuranDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Pilih Ukuran");
+
+        String[] ukuranArray;
+
+        // Memastikan asalForm tidak kosong atau null
+        if (TextUtils.isEmpty(asalForm)) {
+            Toast.makeText(this, "Form tidak dikenali. Menggunakan ukuran default.", Toast.LENGTH_SHORT).show();
+            ukuranArray = ukuranSepatuArray; // Default ukuran sepatu
+        } else {
+            switch (asalForm) {
+                case "formSepatu":
+                    ukuranArray = ukuranSepatuArray;
+                    break;
+                case "formBaju":
+                    ukuranArray = ukuranBajuArray;
+                    break;
+                case "formJaket":
+                    ukuranArray = ukuranJaketArray;
+                    break;
+                case "formCelana":
+                    ukuranArray = ukuranCelanaArray;
+                    break;
+                default:
+                    ukuranArray = ukuranSepatuArray;  // Default ke ukuran sepatu jika tidak ada yang cocok
+                    break;
+            }
+        }
+
+        builder.setItems(ukuranArray, (dialogInterface, item) -> {
+            selectedUkuran.setText(ukuranArray[item]);
+            dialogInterface.dismiss();
+        });
+        builder.show();
     }
 }

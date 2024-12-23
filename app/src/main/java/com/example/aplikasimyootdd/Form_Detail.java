@@ -17,7 +17,7 @@ public class Form_Detail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_detail);
 
-        // Inisialisasi elemen-elemen UI
+        // Inisialisasi elemen UI
         textNamaPembeli = findViewById(R.id.textNamaPembeli);
         textAlamatPembeli = findViewById(R.id.textAlamatPembeli);
         textProduk = findViewById(R.id.textProduk);
@@ -31,24 +31,21 @@ public class Form_Detail extends AppCompatActivity {
         String namaPembeli = intent.getStringExtra("namaPembeli");
         String alamatPembeli = intent.getStringExtra("alamatPembeli");
         String namaProduk = intent.getStringExtra("namaProduk");
-        int jumlahBeli = intent.getIntExtra("jumlahBeli", 1);
-        double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);
+        String jumlahBeli = intent.getStringExtra("jumlahBeli");
+        String totalHarga = intent.getStringExtra("totalHarga");
         String metodePembayaran = intent.getStringExtra("metodePembayaran");
 
-        // Menghitung total pembayaran
-        double totalPembayaran = hargaProduk * jumlahBeli;
-
         // Menampilkan data pada TextView
-        textNamaPembeli.setText(namaPembeli);
-        textAlamatPembeli.setText(alamatPembeli);
-        textProduk.setText(namaProduk);
+        textNamaPembeli.setText("Nama: " + namaPembeli);
+        textAlamatPembeli.setText("Alamat: " + alamatPembeli);
+        textProduk.setText("Produk: " + namaProduk);
         textJumlahBeli.setText("Jumlah Beli: " + jumlahBeli);
-        textMetodePembayaran.setText(metodePembayaran);
-        textTotalPembayaran.setText("Rp " + totalPembayaran);
+        textMetodePembayaran.setText("Metode: " + metodePembayaran);
+        textTotalPembayaran.setText("Total: Rp. " + totalHarga);
 
-        // Mengatur tombol kembali ke halaman utama
+        // Tombol kembali ke halaman utama
         buttonKembaliHome.setOnClickListener(v -> {
-            Intent homeIntent = new Intent(this, DashboardUtama.class); // Ganti dengan activity utama Anda
+            Intent homeIntent = new Intent(this, DashboardUtama.class);
             startActivity(homeIntent);
             finish();
         });

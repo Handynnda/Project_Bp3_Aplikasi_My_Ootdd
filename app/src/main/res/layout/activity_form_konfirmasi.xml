@@ -7,118 +7,134 @@
     android:background="#FAFAFA"
     android:padding="16dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="10dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Konfirmasi Pembayaran"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#333333"
-            android:layout_gravity="center"
-            android:paddingBottom="16dp"/>
-
-        <!-- CardView untuk data pembeli -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="10dp"
-            android:layout_marginBottom="20dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textNamaPembeli"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nama Pembeli"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#333333" />
-
-                <TextView
-                    android:id="@+id/textAlamatPembeli"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Alamat Pembeli"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- CardView untuk total pembayaran -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="10dp"
-            android:layout_marginBottom="20dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textTotalPembayaran"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total Pembayaran"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#333333" />
-
-                <TextView
-                    android:id="@+id/textMetodePembayaran"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Metode Pembayaran"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- QRIS Section -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scan QR untuk Membayar"
-            android:textSize="18sp"
-            android:textColor="#333333"
-            android:layout_marginBottom="10dp"
-            android:layout_gravity="center"/>
-
+        <!-- Icon Back -->
         <ImageView
-            android:id="@+id/imageViewQR"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src="@drawable/img"
-            android:layout_gravity="center"
-            android:contentDescription="Kode QR untuk pembayaran" />
+            android:id="@+id/imageViewBack"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/iconback"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp" />
 
-        <!-- Tombol Selesai -->
-        <Button
-            android:id="@+id/buttonSelesai"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Selesai"
-            android:textSize="18sp"
-            android:backgroundTint="#4CAF50"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="30dp"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_below="@id/imageViewBack"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi Pembayaran"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp"/>
+
+            <!-- CardView untuk data pembeli -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textNamaPembeli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pembeli"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/textAlamatPembeli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat Pembeli"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView untuk total pembayaran -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTotalPembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pembayaran"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/textMetodePembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Metode Pembayaran"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- QRIS Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan QR untuk Membayar"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageViewQR"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/img"
+                android:layout_gravity="center"
+                android:contentDescription="Kode QR untuk pembayaran" />
+
+            <!-- Tombol Selesai -->
+            <Button
+                android:id="@+id/buttonSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Selesai"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+    </RelativeLayout>
 </ScrollView>

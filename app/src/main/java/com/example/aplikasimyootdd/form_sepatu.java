@@ -2,7 +2,6 @@ package com.example.aplikasimyootdd;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +19,13 @@ public class form_sepatu extends AppCompatActivity {
             startActivity(intent);
         });
 
+        // Daftar harga sepatu yang bervariasi
+        double[] hargaSepatu = {
+                250000, 300000, 270000, 280000, 320000,
+                260000, 310000, 295000, 330000, 340000,
+                350000, 315000
+        };
+
         for (int i = 1; i <= 12; i++) {
             int sepatuId = getResources().getIdentifier("sepatu" + i, "id", getPackageName());
             int namasId = getResources().getIdentifier("namas" + i, "id", getPackageName());
@@ -30,6 +36,11 @@ public class form_sepatu extends AppCompatActivity {
             TextView hargas = findViewById(hargasId);
 
             if (sepatu != null && namas != null && hargas != null) {
+                // Set harga dari array ke TextView
+                String hargaFormatted = String.format("Rp. %,d", (int) hargaSepatu[i - 1]);
+                hargas.setText(hargaFormatted);
+
+                // Event klik untuk sepatu
                 sepatu.setOnClickListener(view -> {
                     String namaProduk = namas.getText().toString();
                     String hargaString = hargas.getText().toString();

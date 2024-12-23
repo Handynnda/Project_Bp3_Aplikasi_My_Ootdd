@@ -2,7 +2,6 @@ package com.example.aplikasimyootdd;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +19,14 @@ public class form_jaket extends AppCompatActivity {
             startActivity(intent);
         });
 
-        for (int i = 1 ; i <= 12; i++) {
+        // Daftar harga berbeda untuk setiap jaket
+        double[] hargaJaket = {
+                150000, 135000, 160000, 145000, 170000,
+                155000, 165000, 140000, 175000, 180000,
+                190000, 158000
+        };
+
+        for (int i = 1; i <= 12; i++) {
             int jaketId = getResources().getIdentifier("jaket" + i, "id", getPackageName());
             int namajId = getResources().getIdentifier("namaj" + i, "id", getPackageName());
             int hargajId = getResources().getIdentifier("hargaj" + i, "id", getPackageName());
@@ -30,6 +36,11 @@ public class form_jaket extends AppCompatActivity {
             TextView hargaj = findViewById(hargajId);
 
             if (jaket != null && namaj != null && hargaj != null) {
+                // Set harga dari array ke TextView
+                String hargaFormatted = String.format("Rp. %,d", (int) hargaJaket[i - 1]);
+                hargaj.setText(hargaFormatted);
+
+                // Event klik untuk jaket
                 jaket.setOnClickListener(view -> {
                     String namaProduk = namaj.getText().toString();
                     String hargaString = hargaj.getText().toString();

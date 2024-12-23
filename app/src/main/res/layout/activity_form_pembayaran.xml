@@ -78,7 +78,19 @@
                 android:id="@+id/inputAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Alamat"
+                android:hint="Alamat Lengkap"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#333333" />
+
+            <!-- Pilih Ukuran -->
+            <EditText
+                android:id="@+id/datalistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pilih Ukuran"
+                android:focusable="false"
                 android:background="@drawable/edittext_background"
                 android:padding="12dp"
                 android:layout_marginBottom="12dp"
@@ -113,14 +125,28 @@
                     android:id="@+id/radioTransferBank"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Transfer Bank"
+                    android:text="Transfer Bank (BNI - 9876458392974)"
+                    android:textColor="#333333" />
+
+                <RadioButton
+                    android:id="@+id/radioTransferBank1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BJB - 1109873232555"
                     android:textColor="#333333" />
 
                 <RadioButton
                     android:id="@+id/radioEwallet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="E-Wallet"
+                    android:text="Dana (Admin - 083829335748)"
+                    android:textColor="#333333" />
+
+                <RadioButton
+                    android:id="@+id/radioEwallet1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gopay (Admin - 083148563910)"
                     android:textColor="#333333" />
             </RadioGroup>
 

@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Form_Konfirmasi extends AppCompatActivity {
 
     private TextView textNamaPembeli, textAlamatPembeli, textTotalHarga, textMetodePembayaran;
-    private ImageView imageViewQR;
+    private ImageView imageViewQR, imageViewBack;
     private Button buttonSelesai;
 
     @Override
@@ -26,6 +26,7 @@ public class Form_Konfirmasi extends AppCompatActivity {
         textTotalHarga = findViewById(R.id.textTotalPembayaran);
         textMetodePembayaran = findViewById(R.id.textMetodePembayaran);
         imageViewQR = findViewById(R.id.imageViewQR);
+        imageViewBack = findViewById(R.id.imageViewBack);
         buttonSelesai = findViewById(R.id.buttonSelesai);
 
         // Mendapatkan data dari intent
@@ -41,15 +42,24 @@ public class Form_Konfirmasi extends AppCompatActivity {
         textTotalHarga.setText(String.format("Rp. %,d", (int) totalHarga));
         textMetodePembayaran.setText(metodePembayaran);
 
-        // Tampilkan QR (Ganti dengan QR asli jika diperlukan)
+        // Tampilkan QR
         imageViewQR.setImageResource(R.drawable.img);
 
-        // Tombol selesai
+        // Tombol selesai - Buka Form_Detail
         buttonSelesai.setOnClickListener(v -> {
-            Toast.makeText(this, "Terima kasih, pembayaran sedang diproses!", Toast.LENGTH_SHORT).show();
-            Intent intentMain = new Intent(this, MainActivity.class);
-            startActivity(intentMain);
+            Toast.makeText(this, "Pembayaran Berhasil!", Toast.LENGTH_SHORT).show();
+            Intent detailIntent = new Intent(this, Form_Detail.class);
+            detailIntent.putExtra("namaPembeli", namaPembeli);
+            detailIntent.putExtra("alamatPembeli", alamatPembeli);
+            detailIntent.putExtra("namaProduk", "Produk A");  // Misalkan produk A
+            detailIntent.putExtra("jumlahBeli", "2");  // Misal 2 produk
+            detailIntent.putExtra("totalHarga", String.format("%,d", (int) totalHarga));  // Kirim harga dalam bentuk string
+            detailIntent.putExtra("metodePembayaran", metodePembayaran);
+            startActivity(detailIntent);
             finish();
         });
+
+        // Fungsi untuk tombol back
+        imageViewBack.setOnClickListener(v -> finish());
     }
 }
