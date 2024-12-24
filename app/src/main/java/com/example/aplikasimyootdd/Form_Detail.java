@@ -40,11 +40,11 @@ public class Form_Detail extends AppCompatActivity {
         // Menampilkan data pada TextView
         textNamaPembeli.setText("Nama: " + namaPembeli);
         textAlamatPembeli.setText("Alamat: " + alamatPembeli);
-        textProduk.setText("Produk: " + namaProduk);
+        textProduk.setText("Nama Produk : " + namaProduk);
         textJumlahBeli.setText("Jumlah Beli: " + jumlahBeli);
         textMetodePembayaran.setText("Metode: " + metodePembayaran);
         textTotalPembayaran.setText("Total: Rp. " + totalHarga);
-        textUkuranBarang.setText("Ukuran: " + ukuranBarang);  // Menampilkan ukuran barang
+        textUkuranBarang.setText("Ukuran Produk : " + ukuranBarang);  // Menampilkan ukuran barang
 
         // Tombol kembali ke halaman utama
         buttonKembaliHome.setOnClickListener(v -> {

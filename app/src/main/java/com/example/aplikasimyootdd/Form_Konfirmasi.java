@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Form_Konfirmasi extends AppCompatActivity {
 
-    private TextView textNamaPembeli, textAlamatPembeli, textTotalHarga, textMetodePembayaran, textUkuranBarang;
+    private TextView textNamaPembeli, textAlamatPembeli, textTotalHarga, textMetodePembayaran, textUkuranBarang, textNamaProduk;
     private ImageView imageViewQR, imageViewBack;
     private Button buttonSelesai;
 
@@ -25,7 +25,8 @@ public class Form_Konfirmasi extends AppCompatActivity {
         textAlamatPembeli = findViewById(R.id.textAlamatPembeli);
         textTotalHarga = findViewById(R.id.textTotalPembayaran);
         textMetodePembayaran = findViewById(R.id.textMetodePembayaran);
-        textUkuranBarang = findViewById(R.id.textUkuranBarang);  // Menambahkan TextView untuk ukuran barang
+        textUkuranBarang = findViewById(R.id.textUkuranBarang);
+        textNamaProduk = findViewById(R.id.textNamaProduk);
         imageViewQR = findViewById(R.id.imageViewQR);
         imageViewBack = findViewById(R.id.imageViewBack);
         buttonSelesai = findViewById(R.id.buttonSelesai);
@@ -36,34 +37,42 @@ public class Form_Konfirmasi extends AppCompatActivity {
         String alamatPembeli = intent.getStringExtra("alamatPembeli");
         double totalHarga = intent.getDoubleExtra("totalHarga", 0);
         String metodePembayaran = intent.getStringExtra("metodePembayaran");
-        String ukuranBarang = intent.getStringExtra("ukuranBarang");  // Ambil ukuran barang dari Intent
+        String ukuranBarang = intent.getStringExtra("ukuranBarang");
+        String namaProduk = intent.getStringExtra("namaProduk");
 
-        // Menampilkan data di TextView
+        // Tampilkan data di TextView
         textNamaPembeli.setText(namaPembeli);
         textAlamatPembeli.setText(alamatPembeli);
         textTotalHarga.setText(String.format("Rp. %,d", (int) totalHarga));
         textMetodePembayaran.setText(metodePembayaran);
-        textUkuranBarang.setText("Ukuran: " + ukuranBarang);  // Menampilkan ukuran barang
+        textUkuranBarang.setText("Ukuran Produk: " + ukuranBarang);
 
-        // Tampilkan QR
+        // Cek jika namaProduk null
+        if (namaProduk != null && !namaProduk.isEmpty()) {
+            textNamaProduk.setText("Nama Produk: " + namaProduk);
+        } else {
+            textNamaProduk.setText("Produk: Tidak Diketahui");
+        }
+
+        // Menampilkan QR
         imageViewQR.setImageResource(R.drawable.img);
 
-        // Tombol selesai - Buka Form_Detail
+        // Tombol selesai - Beralih ke Form_Detail
         buttonSelesai.setOnClickListener(v -> {
             Toast.makeText(this, "Pembayaran Berhasil!", Toast.LENGTH_SHORT).show();
             Intent detailIntent = new Intent(this, Form_Detail.class);
             detailIntent.putExtra("namaPembeli", namaPembeli);
             detailIntent.putExtra("alamatPembeli", alamatPembeli);
-            detailIntent.putExtra("namaProduk", "Produk A");  // Misalkan produk A
+            detailIntent.putExtra("namaProduk", namaProduk != null ? namaProduk : "Produk Default");
             detailIntent.putExtra("jumlahBeli", "2");  // Misal 2 produk
-            detailIntent.putExtra("totalHarga", String.format("%,d", (int) totalHarga));  // Kirim harga dalam bentuk string
+            detailIntent.putExtra("totalHarga", String.format("%,d", (int) totalHarga));
             detailIntent.putExtra("metodePembayaran", metodePembayaran);
-            detailIntent.putExtra("ukuranBarang", ukuranBarang);  // Kirim ukuran barang ke Form_Detail
+            detailIntent.putExtra("ukuranBarang", ukuranBarang);
             startActivity(detailIntent);
             finish();
         });
 
-        // Fungsi untuk tombol back
+        // Tombol kembali
         imageViewBack.setOnClickListener(v -> finish());
     }
 }

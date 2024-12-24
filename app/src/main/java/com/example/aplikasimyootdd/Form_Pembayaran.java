@@ -46,8 +46,14 @@ public class Form_Pembayaran extends AppCompatActivity {
         double hargaProduk = intent.getDoubleExtra("hargaProduk", 0);
         asalForm = intent.getStringExtra("asalForm");
 
-        // Debugging asalForm
+        // Debugging asalForm dan namaProduk
         Log.d("Form_Pembayaran", "asalForm: " + asalForm);
+        Log.d("Form_Pembayaran", "namaProduk: " + namaProduk);
+
+        // Cegah namaProduk null
+        if (TextUtils.isEmpty(namaProduk)) {
+            namaProduk = "Produk Default";
+        }
 
         // Menampilkan nama dan harga barang
         textNamaBarang.setText(namaProduk);
@@ -62,6 +68,8 @@ public class Form_Pembayaran extends AppCompatActivity {
         // Klik TextView untuk memilih ukuran
         selectedUkuran.setOnClickListener(view -> showUkuranDialog());
 
+        String finalNamaProduk = namaProduk;  // Buat variabel final
+
         buttonSubmit.setOnClickListener(v -> {
             String namaPembeli = inputNamaPembeli.getText().toString();
             String alamat = inputAlamat.getText().toString();
@@ -69,7 +77,6 @@ public class Form_Pembayaran extends AppCompatActivity {
             String ukuran = selectedUkuran.getText().toString();
             int metodeId = radioGroupMetode.getCheckedRadioButtonId();
 
-            // Validasi input
             if (TextUtils.isEmpty(namaPembeli) || TextUtils.isEmpty(alamat) || TextUtils.isEmpty(jumlahStr) || TextUtils.isEmpty(ukuran) || metodeId == -1) {
                 Toast.makeText(this, "Mohon lengkapi semua data!", Toast.LENGTH_SHORT).show();
                 return;
@@ -78,11 +85,10 @@ public class Form_Pembayaran extends AppCompatActivity {
             int jumlahBarang = Integer.parseInt(jumlahStr);
             double totalHarga = hargaProduk * jumlahBarang;
 
-            // Mendapatkan metode pembayaran yang dipilih
             RadioButton selectedMetode = findViewById(metodeId);
             String metodePembayaran = selectedMetode.getText().toString();
 
-            // Mengirim data ke halaman konfirmasi pembayaran
+            // Mengirim data ke Form_Konfirmasi
             Intent konfirmasiIntent = new Intent(this, Form_Konfirmasi.class);
             konfirmasiIntent.putExtra("namaPembeli", namaPembeli);
             konfirmasiIntent.putExtra("alamatPembeli", alamat);
@@ -90,7 +96,7 @@ public class Form_Pembayaran extends AppCompatActivity {
             konfirmasiIntent.putExtra("totalHarga", totalHarga);
             konfirmasiIntent.putExtra("metodePembayaran", metodePembayaran);
             konfirmasiIntent.putExtra("ukuranBarang", ukuran);
-
+            konfirmasiIntent.putExtra("namaProduk", finalNamaProduk);  // Pakai finalNamaProduk
             startActivity(konfirmasiIntent);
         });
 
@@ -132,7 +138,6 @@ public class Form_Pembayaran extends AppCompatActivity {
             Toast.makeText(this, "Form tidak dikenali. Menggunakan ukuran default.", Toast.LENGTH_SHORT).show();
             ukuranArray = ukuranSepatuArray; // Default ukuran sepatu
         } else {
-            // Memilih ukuran berdasarkan asalForm yang diterima
             switch (asalForm) {
                 case "formSepatu":
                     ukuranArray = ukuranSepatuArray;
@@ -147,14 +152,14 @@ public class Form_Pembayaran extends AppCompatActivity {
                     ukuranArray = ukuranCelanaArray;
                     break;
                 default:
-                    ukuranArray = ukuranSepatuArray; // Default jika tidak ada kecocokan
+                    ukuranArray = ukuranSepatuArray;
                     break;
             }
         }
 
         builder.setItems(ukuranArray, (dialogInterface, item) -> {
-            selectedUkuran.setText(ukuranArray[item]); // Menampilkan ukuran yang dipilih
-            dialogInterface.dismiss(); // Menutup dialog setelah memilih ukuran
+            selectedUkuran.setText(ukuranArray[item]);
+            dialogInterface.dismiss();
         });
         builder.show();
     }
