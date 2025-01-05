@@ -10,9 +10,9 @@
     tools:context=".FormRegister">
 
     <LinearLayout
-        android:layout_width="420dp"
-        android:layout_height="890dp"
-        android:background="@drawable/rounded_corner3"
+        android:layout_width="430dp"
+        android:layout_height="930dp"
+        android:background="@color/DefaultColor"
         android:elevation="12dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,6 +38,7 @@
             android:layout_marginTop="30dp"
             android:text="REGISTER"
             android:textSize="35sp"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <LinearLayout

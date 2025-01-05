@@ -8,8 +8,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="420dp"
-        android:layout_height="890dp"
+        android:layout_width="430dp"
+        android:layout_height="990dp"
         android:background="@color/DefaultColor"
         android:elevation="12dp"
         android:gravity="center"

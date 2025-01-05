@@ -19,8 +19,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="890dp"
-        android:background="@color/white"
+        android:layout_height="990dp"
+        android:background="@color/DefaultColor"
         android:elevation="12dp"
         android:orientation="vertical">
 
@@ -43,10 +43,11 @@
 
             <TextView
                 android:id="@+id/textLogout"
+                android:padding="1dp"
                 android:layout_width="120dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="110dp"
-                android:elevation="5dp"
+                android:elevation="9dp"
                 android:textAlignment="center"
                 android:text="LOG OUT"
                 android:background="@drawable/rounded_corner3"
@@ -77,13 +78,14 @@
             android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="375dp"
             android:layout_height="140dp"
+            android:layout_gravity="center"
             android:background="@color/white"
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="375dp"
+                android:layout_width="335dp"
                 android:layout_height="55dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
@@ -92,7 +94,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="175dp"
+                    android:layout_width="155dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="7dp"
                     android:layout_marginStart="8dp"
@@ -111,12 +113,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:text="Kualitas Bahan\n Premium" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="175dp"
+                    android:layout_width="155dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="7dp"
@@ -149,9 +151,9 @@
 
                 <LinearLayout
                     android:id="@+id/buttonLokasi"
-                    android:layout_width="175dp"
+                    android:layout_width="155dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/rounded_corner3"
                     android:elevation="5dp"
@@ -170,12 +172,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Lokasi Toko Kami"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/buttonBertanya"
-                    android:layout_width="175dp"
+                    android:layout_width="155dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginStart="12dp"
@@ -195,7 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:textSize="15sp"
+                        android:textSize="13sp"
                         android:text="Bertanya Ke Admin" />
                 </LinearLayout>
 
@@ -207,7 +209,7 @@
             android:id="@+id/ButtonPilihan"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@drawable/rounded_corner3"
             android:orientation="vertical">
 
             <LinearLayout
@@ -221,7 +223,7 @@
                     android:layout_width="170dp"
                     android:layout_height="112dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="35dp"
                     android:background="@drawable/bg_sepatu"
                     android:elevation="15dp"
                     android:orientation="vertical">
@@ -271,7 +273,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="115dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="35dp"
+                android:layout_marginBottom="95dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -279,7 +281,7 @@
                     android:layout_width="170dp"
                     android:layout_height="112dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="35dp"
                     android:background="@drawable/bg_kaos"
                     android:elevation="15dp"
                     android:orientation="vertical">
