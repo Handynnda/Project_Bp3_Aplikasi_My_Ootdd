@@ -89,7 +89,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="24dp"
-                            android:text="Adidas Samba white"
+                            android:text="Adidas Samba  OG White"
                             android:textAlignment="center"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -99,7 +99,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.255.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -124,7 +124,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="32dp"
-                            android:text="Sepatu Dokmart Hight"
+                            android:text="Sepatu Boot Docmart "
                             android:textAlignment="center"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -134,7 +134,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.169.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -159,7 +159,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:text="converse AllStar"
+                            android:text="Converse  Classik Unisex"
                             android:textAlignment="center"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -169,7 +169,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.389.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -201,7 +201,7 @@
                             android:id="@+id/namas4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="New Balance 310 white"
+                            android:text="New Balance 530 White"
                             android:textAlignment="center"
                             android:layout_marginTop="30dp"
                             android:textSize="10dp"
@@ -212,7 +212,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.355.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -236,7 +236,7 @@
                             android:id="@+id/namas5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Adidas Samba black"
+                            android:text="Adidas Samba OG Black"
                             android:textAlignment="center"
                             android:layout_marginTop="30dp"
                             android:textSize="10dp"
@@ -247,7 +247,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.255.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -271,7 +271,7 @@
                             android:id="@+id/namas6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Nike Air Jordan Low"
+                            android:text="Nike Air Jordan"
                             android:textAlignment="center"
                             android:layout_marginTop="25dp"
                             android:textSize="10dp"
@@ -282,125 +282,238 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.870.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="20dp"
+                 android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="113dp"
-                        android:layout_height="185dp"
-                        android:layout_marginStart="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:orientation="vertical">
+                 <LinearLayout
+                     android:layout_width="113dp"
+                     android:layout_height="185dp"
+                     android:layout_marginStart="20dp"
+                     android:background="@drawable/rounded_corner"
+                     android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/sepatu7"
-                            android:layout_width="match_parent"
-                            android:layout_height="105dp"
-                            android:layout_marginTop="6dp"
-                            app:srcCompat="@drawable/sepatu7" />
+                     <ImageView
+                         android:id="@+id/sepatu7"
+                         android:layout_width="match_parent"
+                         android:layout_height="105dp"
+                         android:layout_marginTop="6dp"
+                         app:srcCompat="@drawable/sepatu7" />
 
-                        <TextView
-                            android:id="@+id/namas7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Nike Air Jordan Hight"
-                            android:textAlignment="center"
-                            android:layout_marginTop="30dp"
-                            android:textSize="10dp"
-                            android:textStyle="bold" />
+                     <TextView
+                         android:id="@+id/namas7"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Womens Air Jordan"
+                         android:textAlignment="center"
+                         android:layout_marginTop="30dp"
+                         android:textSize="10dp"
+                         android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/hargas7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
-                            android:textAlignment="center"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                     <TextView
+                         android:id="@+id/hargas7"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="2dp"
+                         android:text="Rp.550.000"
+                         android:textAlignment="center"
+                         android:textSize="10sp"
+                         android:textStyle="bold" />
+                 </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="113dp"
-                        android:layout_height="185dp"
-                        android:layout_marginStart="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:orientation="vertical">
+                 <LinearLayout
+                     android:layout_width="113dp"
+                     android:layout_height="185dp"
+                     android:layout_marginStart="20dp"
+                     android:background="@drawable/rounded_corner"
+                     android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/sepatu8"
-                            android:layout_width="match_parent"
-                            android:layout_height="105dp"
-                            android:layout_marginTop="6dp"
-                            app:srcCompat="@drawable/sepatu8" />
+                     <ImageView
+                         android:id="@+id/sepatu8"
+                         android:layout_width="match_parent"
+                         android:layout_height="105dp"
+                         android:layout_marginTop="6dp"
+                         app:srcCompat="@drawable/sepatu8" />
 
-                        <TextView
-                            android:id="@+id/namas8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="docmart woman low"
-                            android:textAlignment="center"
-                            android:layout_marginTop="30dp"
-                            android:textSize="10dp"
-                            android:textStyle="bold" />
+                     <TextView
+                         android:id="@+id/namas8"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Black Sepatu Docmart "
+                         android:textAlignment="center"
+                         android:layout_marginTop="30dp"
+                         android:textSize="10dp"
+                         android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/hargas8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
-                            android:textAlignment="center"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                     <TextView
+                         android:id="@+id/hargas8"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="2dp"
+                         android:text="Rp.170.000"
+                         android:textAlignment="center"
+                         android:textSize="10sp"
+                         android:textStyle="bold" />
+                 </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="113dp"
-                        android:layout_height="185dp"
-                        android:layout_marginStart="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:orientation="vertical">
+                 <LinearLayout
+                     android:layout_width="113dp"
+                     android:layout_height="185dp"
+                     android:layout_marginStart="20dp"
+                     android:background="@drawable/rounded_corner"
+                     android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/sepatu9"
-                            android:layout_width="match_parent"
-                            android:layout_height="115dp"
-                            android:layout_marginTop="6dp"
-                            app:srcCompat="@drawable/sepatu9" />
+                     <ImageView
+                         android:id="@+id/sepatu9"
+                         android:layout_width="match_parent"
+                         android:layout_height="115dp"
+                         android:layout_marginTop="6dp"
+                         app:srcCompat="@drawable/sepatu9" />
 
-                        <TextView
-                            android:id="@+id/namas9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Ventela public low Black"
-                            android:textAlignment="center"
-                            android:layout_marginTop="20dp"
-                            android:textSize="10dp"
-                            android:textStyle="bold" />
+                     <TextView
+                         android:id="@+id/namas9"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Ventela Public Low Black"
+                         android:textAlignment="center"
+                         android:layout_marginTop="20dp"
+                         android:textSize="10dp"
+                         android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/hargas9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
-                            android:textAlignment="center"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </LinearLayout>
+                     <TextView
+                         android:id="@+id/hargas9"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="2dp"
+                         android:text="Rp.178.000"
+                         android:textAlignment="center"
+                         android:textSize="10sp"
+                         android:textStyle="bold" />
+                 </LinearLayout>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="20dp"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="113dp"
+                     android:layout_height="185dp"
+                     android:layout_marginStart="20dp"
+                     android:background="@drawable/rounded_corner"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:id="@+id/sepatu10"
+                         android:layout_width="match_parent"
+                         android:layout_height="105dp"
+                         android:layout_marginTop="6dp"
+                         app:srcCompat="@drawable/sepatu10" />
+
+                     <TextView
+                         android:id="@+id/namas10"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Women Boots Oxford"
+                         android:textAlignment="center"
+                         android:layout_marginTop="30dp"
+                         android:textSize="10dp"
+                         android:textStyle="bold" />
+
+                     <TextView
+                         android:id="@+id/hargas10"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="2dp"
+                         android:text="Rp.150.000"
+                         android:textAlignment="center"
+                         android:textSize="10sp"
+                         android:textStyle="bold" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="113dp"
+                     android:layout_height="185dp"
+                     android:layout_marginStart="20dp"
+                     android:background="@drawable/rounded_corner"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:id="@+id/sepatu11"
+                         android:layout_width="match_parent"
+                         android:layout_height="105dp"
+                         android:layout_marginTop="6dp"
+                         app:srcCompat="@drawable/sepatu11" />
+
+                     <TextView
+                         android:id="@+id/namas11"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Adidas Samba \n Brown Gum"
+                         android:textAlignment="center"
+                         android:layout_marginTop="30dp"
+                         android:textSize="10dp"
+                         android:textStyle="bold" />
+
+                     <TextView
+                         android:id="@+id/hargas11"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="2dp"
+                         android:text="Rp.470.000"
+                         android:textAlignment="center"
+                         android:textSize="10sp"
+                         android:textStyle="bold" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="113dp"
+                     android:layout_height="185dp"
+                     android:layout_marginStart="20dp"
+                     android:background="@drawable/rounded_corner"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:id="@+id/sepatu12"
+                         android:layout_width="match_parent"
+                         android:layout_height="115dp"
+                         android:layout_marginTop="6dp"
+                         app:srcCompat="@drawable/sepatu12" />
+
+                     <TextView
+                         android:id="@+id/namas12"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Keith Shoes Oxford"
+                         android:textAlignment="center"
+                         android:layout_marginTop="20dp"
+                         android:textSize="10dp"
+                         android:textStyle="bold" />
+
+                     <TextView
+                         android:id="@+id/hargas12"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="2dp"
+                         android:text="Rp.170.000"
+                         android:textAlignment="center"
+                         android:textSize="10sp"
+                         android:textStyle="bold" />
+                 </LinearLayout>
+             </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -418,28 +531,28 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/sepatu10"
+                            android:id="@+id/sepatu13"
                             android:layout_width="match_parent"
                             android:layout_height="105dp"
                             android:layout_marginTop="5dp"
-                            app:srcCompat="@drawable/sepatu" />
+                            app:srcCompat="@drawable/sepatu13" />
 
                         <TextView
-                            android:id="@+id/namas10"
+                            android:id="@+id/namas13"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Celana Pria Pendek"
+                            android:text="Shoes Sneakers men"
                             android:textAlignment="center"
                             android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/hargas10"
+                            android:id="@+id/hargas13"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.230.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -453,28 +566,28 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/sepatu11"
+                            android:id="@+id/sepatu14"
                             android:layout_width="wrap_content"
                             android:layout_height="105dp"
                             android:layout_marginTop="5dp"
-                            app:srcCompat="@drawable/sepatu" />
+                            app:srcCompat="@drawable/sepatu14" />
 
                         <TextView
-                            android:id="@+id/namas11"
+                            android:id="@+id/namas14"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Celana Pria Pendek"
+                            android:text="Sneakers Get Viar"
                             android:textAlignment="center"
                             android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/hargas11"
+                            android:id="@+id/hargas14"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.270.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -488,29 +601,28 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/sepatu12"
+                            android:id="@+id/sepatu15"
                             android:layout_width="wrap_content"
                             android:layout_height="105dp"
                             android:layout_marginTop="5dp"
-
-                            app:srcCompat="@drawable/sepatu" />
+                            app:srcCompat="@drawable/sepatu15" />
 
                         <TextView
-                            android:id="@+id/namas12"
+                            android:id="@+id/namas15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Celana Pria Pendek"
+                            android:text="Shoes Retro Brown "
                             android:textAlignment="center"
                             android:layout_marginTop="30dp"
                             android:textSize="10dp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/hargas12"
+                            android:id="@+id/hargas15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Rp.70.000"
+                            android:text="Rp.170.000"
                             android:textAlignment="center"
                             android:textSize="10sp"
                             android:textStyle="bold" />

@@ -104,7 +104,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.85.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -140,7 +140,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.180.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -176,7 +176,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.170.000" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -220,7 +220,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.170.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -256,7 +256,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.89.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -292,7 +292,7 @@
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.228.000" />
             </LinearLayout>
         </LinearLayout>
 
@@ -333,7 +333,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="Rp.70.000"
+                    android:text="Rp.120.000"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     android:textStyle="bold" />
@@ -369,7 +369,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="Rp.70.000"
+                    android:text="Rp.165.000"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     android:textStyle="bold" />
@@ -405,7 +405,123 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="Rp.70.000"
+                    android:text="Rp.250.000"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/celana10"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="6dp"
+                    app:srcCompat="@drawable/celana10"
+                    android:onClick="onCelana10click"/>
+
+                <TextView
+                    android:id="@+id/namac10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cargo wide-Legged "
+                    android:textAlignment="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hargac10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp.280.000"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/celana11"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="6dp"
+                    app:srcCompat="@drawable/celana11"
+                    android:onClick="onCelana11click"/>
+
+                <TextView
+                    android:id="@+id/namac11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="jeans man's Black"
+                    android:textAlignment="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hargac11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp.370.000"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="113dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/celana12"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="6dp"
+                    app:srcCompat="@drawable/celana12"
+                    android:onClick="onCelana12click"/>
+
+                <TextView
+                    android:id="@+id/namac12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Jeans High Cargo"
+                    android:textAlignment="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hargac12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp.270.000"
                     android:textAlignment="center"
                     android:textSize="10sp"
                     android:textStyle="bold" />
@@ -428,32 +544,32 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/celana10"
+                    android:id="@+id/celana13"
                     android:layout_width="match_parent"
                     android:layout_height="128dp"
                     android:layout_marginTop="6dp"
-                    app:srcCompat="@drawable/celana"
-                    android:onClick="onCelana10click"/>
+                    app:srcCompat="@drawable/celana13"
+                    android:onClick="onCelana13click"/>
 
                 <TextView
-                    android:id="@+id/namac10"
+                    android:id="@+id/namac13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Khaki Jeans  Skrit" />
 
                 <TextView
-                    android:id="@+id/hargac10"
+                    android:id="@+id/hargac13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.180.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -464,32 +580,32 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/celana11"
+                    android:id="@+id/celana14"
                     android:layout_width="match_parent"
                     android:layout_height="128dp"
                     android:layout_marginTop="6dp"
-                    app:srcCompat="@drawable/celana"
-                    android:onClick="onCelana11click"/>
+                    app:srcCompat="@drawable/celana14"
+                    android:onClick="onCelana14click"/>
 
                 <TextView
-                    android:id="@+id/namac11"
+                    android:id="@+id/namac14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Stijen Rok Hijau " />
 
                 <TextView
-                    android:id="@+id/hargac11"
+                    android:id="@+id/hargac14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.170.000" />
             </LinearLayout>
 
             <LinearLayout
@@ -500,32 +616,32 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/celana12"
+                    android:id="@+id/celana15"
                     android:layout_width="match_parent"
                     android:layout_height="128dp"
                     android:layout_marginTop="6dp"
-                    app:srcCompat="@drawable/celana"
-                    android:onClick="onCelana12click"/>
+                    app:srcCompat="@drawable/celana15"
+                    android:onClick="onCelana15click"/>
 
                 <TextView
-                    android:id="@+id/namac12"
+                    android:id="@+id/namac15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Celana Pria Pendek" />
+                    android:text="Short Preloved white" />
 
                 <TextView
-                    android:id="@+id/hargac12"
+                    android:id="@+id/hargac15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:textSize="10sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:text="Rp.70.000" />
+                    android:text="Rp.170.000" />
             </LinearLayout>
         </LinearLayout>
 
